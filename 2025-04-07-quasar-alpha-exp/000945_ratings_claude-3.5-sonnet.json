@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 10.0,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a very thorough description of the Dandiset including: 1) The ID (000945) and full title, 2) A detailed dataset description explaining the purpose (neural spiking data in awake rat somatosensory cortex during ultrasound stimulation), 3) Key metadata including version, license, creation date, and contributors, 4) Clear explanation of the data contents (32-channel recordings, spike-sorted units by cell type, trial timing data), 5) Information about data organization (75 assets shown), and 6) Specific experimental details about subject, recording parameters, and trial structure. The description is well-organized, clear, and comprehensive.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a very thorough description of the Dandiset including: 1) Dataset title and citation, 2) Clear description of the experimental content (neural spiking data from awake rats), 3) Detailed metadata including version, license, creation date, and contributors, 4) Comprehensive overview of the dataset structure (75 assets, file organization), 5) Specific experimental details (32-channel recordings, spike-sorted units, trial information), and 6) Clear organization showing how the data is structured. The description also includes relevant context about the purpose (studying ultrasound stimulation effects) and provides example data access paths.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a very comprehensive description of the Dandiset including: 1) Full title and ID (000945), 2) Clear description of dataset contents (neural spiking data from awake rat somatosensory cortex), 3) Detailed metadata (version, license, creation date, contributors), 4) Data organization (75 assets shown), 5) Experimental details (subject info, number of electrodes, trials, units), 6) Clear documentation of data structure and purpose. The description is well-organized, starting with an overview and drilling down into specifics, making it easy to understand the dataset's content and organization.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 8.0,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook shows strong metadata handling by: 1) Using DANDI API to list assets and count them (75 total), 2) Loading specific metadata fields including version, license, creation date, and contributors, 3) Successfully loading an NWB file using LINDI and pynwb with session description and start time, 4) Extracting detailed experimental metadata (subject ID, species, sex, trial counts, electrode counts), 5) Providing clear explanations of the metadata fields. However, it doesn't exhaustively explore all possible metadata fields or provide detailed descriptions of each field's significance.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates thorough metadata exploration by: 1) Using DandiAPIClient to list assets, 2) Accessing and displaying session description and start time, 3) Showing detailed experimental metadata including subject ID, species, sex, and session information, 4) Loading electrode metadata including column names and IDs, 5) Accessing trial information, and 6) Loading unit information with cell types. Each section is well-explained with markdown descriptions. However, it doesn't comprehensively describe all possible metadata fields or provide a complete demonstration of working with every available metadata field.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong metadata exploration capabilities. It shows:\n1. Using DandiAPIClient to load the dandiset and list assets\n2. Loading specific NWB files using LINDI and pynwb\n3. Displaying key metadata like session description and start time\n4. Showing experimental metadata including subject info, trial counts, electrode counts\n5. Clear explanations of the metadata fields\nHowever, it doesn't provide comprehensive descriptions of all available metadata fields or demonstrate accessing every possible metadata attribute.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong asset handling capabilities: it uses the DANDI API to list all assets (75 total), shows the first 5 asset paths, loads a specific NWB file using both LINDI and pynwb, and successfully accesses basic metadata (session description and start time). However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. The code runs successfully with only minor non-critical warnings.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully demonstrates asset loading at multiple levels: 1) Uses DandiAPIClient to list all assets in the dataset and shows first 5 paths, 2) Loads a specific NWB file using both LINDI and pynwb, 3) Accesses and displays basic metadata from the loaded file (session description and start time), 4) Shows how to access detailed internal components (electrodes, trials, units). However, it doesn't explore multiple asset types or provide comprehensive metadata exploration beyond the basics.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates several levels of asset handling:\n    1. Uses DandiAPIClient to list all assets in the dataset\n    2. Shows how to load a specific NWB file using LINDI and pynwb\n    3. Successfully accesses basic metadata (session description, start time)\n    4. Demonstrates accessing specific data components (electrodes, trials, units)\n    However, it doesn't explore multiple asset types or provide comprehensive metadata exploration beyond the basics. The focus is mainly on one specific NWB file.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 8.0,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong competency in NWB file handling. It successfully:\n    1. Uses LINDI and pynwb to load the file\n    2. Accesses basic metadata (session description, start time)\n    3. Explores multiple key components (electrodes, trials, units)\n    4. Shows how to access specific data fields within these components\n    5. Extracts and uses the data for analysis\n    6. Demonstrates proper error handling\n    However, it doesn't fully explore all possible NWB components (like processing modules) or show the complete hierarchical structure of the file.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong competency in NWB file handling. It successfully: 1) uses LINDI and pynwb to load the file, 2) accesses key NWB components like session info, electrodes table, trials, and units, 3) extracts and displays metadata from multiple data structures, 4) shows how to access specific data fields within each component (spike times, cell types, trial times), and 5) uses this information for analysis. The code executes with only minor non-critical warnings. However, it doesn't provide a complete exploration of all possible NWB components or show the full hierarchical structure of the file.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong NWB file handling capabilities: 1) Successfully loads NWB file using LINDI and pynwb, 2) Accesses multiple key components including electrodes, trials, and units, 3) Extracts and displays metadata like session description and start time, 4) Shows how to access specific data structures (spike times, trial times), 5) Demonstrates working with multiple datasets within the NWB file, 6) Includes error handling and proper data validation. However, it doesn't provide a complete exploration of all possible NWB components or show the full hierarchical structure of the file.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong data loading capabilities from NWB files. It successfully:\n    1. Uses LINDI and pynwb to load the NWB file\n    2. Accesses multiple data types (electrodes, trials, units)\n    3. Extracts specific data elements (spike times, cell types, trial times)\n    4. Shows how to handle different data structures (arrays, timestamps)\n    5. Processes the data for visualization\n    However, it doesn't show advanced data access techniques or handle complex nested structures, and some data types like raw signals are not explored.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong competency in loading and handling NWB data. It shows:\n    1. Proper initialization using both LINDI and pynwb\n    2. Access to basic metadata (session description, start time)\n    3. Loading of multiple data types (electrodes, trials, units)\n    4. Extraction of specific data elements (spike times, cell types, trial times)\n    5. Appropriate handling of different data structures (arrays, timestamps)\n    6. Use of loaded data for analysis and visualization\n    However, it doesn't demonstrate more advanced techniques like handling of missing data, chunked loading, or complex queries, which would be needed for a higher score.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong data loading capabilities from NWB files. It shows:\n    1. Loading data using both LINDI and pynwb libraries\n    2. Accessing multiple data types (electrodes, trials, units)\n    3. Extracting specific attributes (session description, start time)\n    4. Handling different data structures (arrays, timestamps, metadata)\n    5. Accessing nested data (spike times within units)\n    6. Working with complex data types (intervals, units tables)\n    However, it doesn't demonstrate advanced data access techniques or comprehensive handling of all possible NWB data types. The loading is focused on the basic necessary elements for the analysis.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates solid visualization capabilities with three distinct plots: a histogram of spike counts, a bar plot of mean firing rates, and a histogram of trial start times. Each plot includes proper axis labels, titles, and clear formatting. The visualizations effectively show different aspects of the neural data (spike distributions, firing rates, and experimental timing). The code uses matplotlib effectively with good figure sizing and formatting. However, it falls short of publication quality as it uses basic color schemes, lacks error bars or statistical annotations, and doesn't include advanced visualization techniques like raster plots or heat maps that are common in neuroscience. The visualizations are well-documented with markdown explanations but could benefit from more sophisticated plotting approaches.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates multiple types of visualizations (histograms and bar plots) of different aspects of the NWB data including spike counts, firing rates, and trial timing. Each plot includes proper axis labels, titles, and appropriate color coding. The visualizations are clear and informative, showing data distribution and patterns effectively. However, the plots lack some advanced features like error bars, statistical annotations, or subplot combinations that would make them publication-ready. The code is well-structured and successfully executes, producing meaningful visualizations that help understand the data structure and content. The markdown cells provide good context for interpreting the visualizations.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates multiple types of visualizations (histograms and bar plots) of different aspects of the NWB data, including spike counts, firing rates, and trial timing. The plots are properly labeled with titles, axes, and units. The code includes basic formatting (figure size, colors, alpha transparency) and saves the figures. The visualizations effectively communicate the data distribution and patterns. However, it doesn't reach the level of publication quality (missing error bars, no statistical annotations, basic color scheme) and doesn't explore more advanced visualization techniques or complex data relationships. The markdown cells provide good context for interpreting the visualizations.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains 3 plots (spike count histogram, mean firing rate per unit, trial start times) that are well-formatted with:\n    - Consistent figure sizes (8,6)\n    - Clear titles\n    - Proper axis labels with units where appropriate\n    - Appropriate color choices with alpha transparency\n    - Good use of different plot types (histogram, bar plot) for different data\n    - Readable fonts and scales\n    However, they lack some elements that would make them publication-ready:\n    - No grid lines for easier reading\n    - No error bars where applicable\n    - No legend annotations\n    - No custom styling or professional polish\n    - No subplot organization for comparing related data",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains 3 plots (spike count histogram, mean firing rate bar plot, and trial start times histogram). The plots include essential elements like titles, axis labels, and clear data visualization. They use appropriate colors with alpha transparency for better visibility. However, they could be improved by: adding legends where applicable, including units in axis labels (e.g., seconds), adjusting font sizes for better readability, and adding gridlines. Some axis limits and tick marks could be optimized. While the plots are clear and informative, they fall short of publication quality due to these minor formatting limitations.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains three plots: a spike count histogram, mean firing rate bar plot, and trial start times histogram. All plots have proper titles, axis labels, and clear data visualization. The plots use appropriate colors with alpha transparency for better visibility. They have consistent sizing (8,6) and use tight_layout() for proper spacing. However, they lack some elements that would make them truly publication-ready, such as: gridlines, legend annotations, statistical markers, error bars where applicable, and consistent styling across all figures. The font sizes could be optimized, and there's no coordinate unit specifications (e.g., \"Time (s)\" vs just \"Time\").",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 5.0,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains exactly three plots, each serving a distinct analytical purpose: 1) A histogram showing distribution of spike counts across units 2) A bar plot displaying mean firing rates per unit 3) A histogram showing distribution of trial start times. Each plot effectively visualizes different aspects of the data - neural activity patterns, unit-specific firing characteristics, and experimental timeline. The plots use appropriate visualization types for their respective data and include proper labeling and titles.",
+                    "repnum": 0
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains exactly 3 plots:\n    1. A histogram showing distribution of spike counts across units\n    2. A bar plot showing mean firing rate per unit\n    3. A histogram showing distribution of trial start times\n    All plots are effective and show different aspects of the data (spike activity and trial timing), using appropriate visualization types (histograms and bar plots) for the data being presented. The plots include proper labels, titles, and are well-explained in the markdown cells.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains exactly 3 plots that effectively demonstrate different aspects of the data: 1) A histogram showing distribution of spike counts across units, 2) A bar plot showing mean firing rates per unit, and 3) A histogram showing distribution of trial start times. Each plot visualizes a different aspect of the data (spike activity and temporal distribution) and uses appropriate visualization types (histograms and bar plots) for the data being presented. The plots are well-labeled with axes, titles, and use different colors for clarity.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}

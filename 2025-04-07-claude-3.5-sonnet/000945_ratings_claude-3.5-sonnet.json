@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 8.333333333333334,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook provides a detailed description of DANDI:000945, including:\n    - Clear statement of purpose (neural recordings during tFUS stimulation)\n    - Key experimental details (32-channel recordings, PRF tests, 500 trials, stimulation timing)\n    - Subject information (awake head-fixed rats, somatosensory cortex)\n    - Data structure (multiple subjects and conditions)\n    - Basic metadata (confirmed through code showing subject species, sex, age)\n    However, it doesn't fully detail the complete data organization or provide a comprehensive overview of all available metadata fields.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook provides a thorough description of Dandiset 000945. It includes: 1) The ID (000945), 2) The content (neural recordings from somatosensory cortex during tFUS), 3) Key experimental details (32-channel NeuroNexus electrodes, different PRFs, 500 trials, ~2.5s stimulation intervals), 4) Subject information (awake head-fixed rats), and 5) Dataset organization (multiple subjects and conditions). However, it doesn't fully detail the complete data organization structure or provide an exhaustive list of metadata fields available in the dataset.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of DANDI:000945, including: 1) The purpose (neural recordings during transcranial focused ultrasound stimulation), 2) Key experimental details (32-channel NeuroNexus electrodes, different PRFs, 500 trials, timing details), 3) Subject information (awake head-fixed rats, somatosensory cortex), 4) Multiple recording conditions, 5) Data organization (shows number of assets = 75), and 6) Key metadata fields like session ID, description, institution, and subject details. The description appears early in the notebook and sets up the analysis effectively.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 7.333333333333333,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates loading the dandiset using DandiAPIClient, retrieves the basic dataset ID (000945), and counts the assets (75). It then loads an NWB file and displays key metadata including session ID, description, institution, and subject information (species, sex, age). While it shows good basic metadata exploration, it doesn't provide comprehensive descriptions of all available metadata fields or demonstrate working with all possible metadata. The code executes successfully and the displayed information is well-organized and relevant.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates loading the dandiset using DandiAPIClient and shows competent metadata exploration. It successfully: 1) Loads the dandiset using proper API calls, 2) Gets and displays the total number of assets, 3) Loads a specific NWB file and displays key metadata fields including session ID, description, institution, and subject information (species, sex, age). However, it doesn't provide descriptions of all possible metadata fields or demonstrate comprehensive exploration of all available metadata options.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook effectively demonstrates loading the dandiset using DandiAPIClient, retrieves the list of assets, and successfully loads an NWB file with detailed metadata. It shows basic session info (ID, description, institution) and subject information (species, sex, age). While it accesses several key metadata fields, it doesn't explore all possible metadata fields or provide comprehensive descriptions of the fields. The code executes successfully with only minor warnings, and includes some context about what the metadata represents.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook shows basic asset loading capabilities: it uses DandiAPIClient to connect and list assets (showing total count of 75), and then demonstrates loading a specific NWB file using LindiH5pyFile. It successfully accesses the file content as shown by the output of session and subject information. However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. The asset handling is functional but basic.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates basic asset loading functionality: it uses DandiAPIClient to connect to the dataset, lists all assets (showing there are 75), and then loads a specific NWB file using lindi. It successfully accesses basic metadata like session ID, description, and subject information. However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. The code works without errors but focuses on a single example rather than showing different approaches to asset handling.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates basic asset loading functionality. It successfully uses DandiAPIClient to connect to the Dandiset and list all available assets (showing 75 total assets). It then proceeds to load a specific NWB file using lindi. However, it doesn't explore different asset types or show comprehensive metadata handling. While the asset loading is functional, it only shows a single example and doesn't dive deep into asset properties or metadata exploration.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 7.666666666666667,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong NWB file handling capabilities. It successfully loads an NWB file using pynwb and lindi, and shows how to access multiple key components including: session metadata (ID, description, institution), subject information (species, sex, age), intervals (trials data), and units (spike times). It explores these data structures meaningfully through analysis and visualization. However, it doesn't provide a complete exploration of all possible NWB components or show the full hierarchical structure of NWB files.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully demonstrates loading NWB files and explores multiple key components. It shows:\n1. Loading using pynwb and lindi\n2. Accessing basic metadata (session ID, description, institution)\n3. Exploring subject information\n4. Accessing intervals/trials data\n5. Working with units/spike data\nHowever, it doesn't provide a comprehensive exploration of the full NWB hierarchy or all available data types, and some common NWB components (like acquisition, processing modules, device info) aren't shown.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook successfully demonstrates several key aspects of NWB file handling: 1) Uses DANDI API to list assets, 2) Opens NWB file using pynwb and lindi, 3) Accesses basic metadata (session info, subject info), 4) Shows how to access different components (trials, units, spike times), 5) Demonstrates working with multiple data structures (intervals, units). However, while comprehensive for the data used, it doesn't fully explore all possible NWB components or show the complete hierarchical structure of NWB files.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 8.0,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong competency in loading and handling NWB data. It shows:\n    1. Using DandiAPIClient to access the dataset\n    2. Loading NWB file using LINDI and pynwb\n    3. Accessing multiple data types (trials, units, spike times)\n    4. Properly handling different data structures (intervals, units table)\n    5. Extracting specific data elements (trial times, spike times)\n    6. Processing complex nested data for analysis\n    However, it doesn't demonstrate some advanced techniques like handling time series data or dealing with specialized neurodata types, which would be needed for a higher score.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates comprehensive loading and handling of NWB data through several key aspects:\n    1. Uses DandiAPIClient to access the dataset\n    2. Successfully loads NWB file using LindiH5pyFile and NWBHDF5IO\n    3. Accesses multiple data types including:\n       - Basic metadata (session info, subject info)\n       - Intervals data (trials)\n       - Units data (spike times)\n    4. Shows how to extract and work with different data structures (arrays, timestamps)\n    5. Demonstrates proper error handling (warning messages visible but handled)\n    6. Uses loaded data effectively in analysis\n    However, it doesn't show some advanced data access techniques like lazy loading or handling of large datasets.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong competency in loading and handling NWB data. It shows how to:\n    1. Use DANDI API to access assets\n    2. Load NWB file using LindiH5pyFile and pynwb\n    3. Access basic metadata (session info, subject info)\n    4. Load and handle different data types (trials, units, spike times)\n    5. Access nested data structures (e.g., units[\"spike_times\"][unit_idx])\n    6. Work with both event data (spike times) and interval data (trials)\n    However, it doesn't demonstrate more advanced techniques like lazy loading or handling of large datasets, and some data types (like continuous recordings) aren't explored.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong visualization capabilities with multiple plot types:\n    1. Histogram of inter-trial intervals with clear axes labels and title\n    2. Distribution of firing rates across units\n    3. Detailed PSTH plot with error bands, proper labeling, and legend\n    All visualizations are well-formatted using seaborn styling, include appropriate axes labels and titles, and effectively communicate the data. The code successfully accesses different aspects of the NWB file (trials, units, spike times) and transforms them into meaningful visualizations. However, it falls short of publication quality as it uses basic color schemes and doesn't include advanced features like subplots or customized styling that would be expected in publication figures.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong visualization capabilities with multiple plot types: histogram of inter-trial intervals, distribution of firing rates, and a detailed PSTH plot. The visualizations are well-formatted with proper axis labels, titles, and legends. The PSTH plot includes error bands and reference lines. However, it falls short of publication quality as some advanced features like custom color schemes, multi-panel figures, or statistical annotations are missing. The notebook successfully shows how to extract and visualize multiple aspects of NWB data (trials, units, spike times) but could include more data types (e.g., raw traces, LFP).",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates strong visualization capabilities with multiple well-executed plots: 1) A histogram of inter-trial intervals with clear axes labels and titles, 2) A distribution of firing rates across units with complete statistical information, and 3) A sophisticated PSTH plot showing mean and standard error with proper legends, axes labels, and reference lines. The visualizations effectively communicate the data structure and neural response patterns. The code is well-documented and produces clear, professional-looking plots using seaborn styling. However, it falls short of publication quality as it lacks customized color schemes, size optimization, or advanced statistical visualization techniques.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 7.666666666666667,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains three plots: a histogram of inter-trial intervals, a histogram of firing rates, and a PSTH plot. The plots demonstrate good formatting with clear axes labels, titles, and appropriate scaling. Seaborn styling is used consistently (sns.set_theme()). The PSTH plot includes error bands, a legend, and reference lines. However, there are some areas for improvement: color schemes could be more intentional, no units specified for some axes (e.g., 'Count' vs 'Number of Units'), and grid lines could be adjusted for better readability. Plot sizes are appropriately set using figsize. While the plots are professional and clear, they fall slightly short of complete publication quality.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains three plots: inter-trial intervals histogram, firing rates distribution, and PSTH. All plots demonstrate good qualities: proper figure sizing, clear axis labels, informative titles, and appropriate use of color. The PSTH plot includes error bands, a legend, and reference lines. However, they could be improved with color schemes more suitable for colorblind readers, additional grid lines for better readability, and more detailed figure captions explaining methodological details. There's also room for improvement in terms of consistent styling across plots and annotation of key features.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains 3 plots: a histogram of inter-trial intervals, a histogram of firing rates, and a PSTH plot. All plots demonstrate good scientific practices with clear axes labels, titles, and appropriate units. The PSTH plot includes error bands, proper legend, and stimulus timing indicator. The plots use a consistent seaborn style, appropriate figure sizes, and readable fonts. The visualizations effectively communicate the data. However, they could be enhanced with additional elements like grid lines, more detailed captions, or custom color schemes to reach publication quality.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 4.666666666666667,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains exactly 3 plots: 1) A histogram showing distribution of inter-trial intervals, 2) A histogram showing distribution of firing rates across units, and 3) A population PSTH plot showing neural responses to stimulation. All three plots effectively visualize different aspects of the data - timing, unit characteristics, and neural responses - and are well-labeled with appropriate axes, titles, and in the case of the PSTH, includes error bands and a legend.",
+                    "repnum": 0
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains exactly three plots that effectively demonstrate different aspects of the data: 1) A histogram showing the distribution of inter-trial intervals, 2) A histogram showing the distribution of firing rates across units, and 3) A population PSTH (Peri-Stimulus Time Histogram) showing neural responses to stimulation. Each plot serves a distinct purpose and reveals different aspects of the experimental data.",
+                    "repnum": 1
+                },
+                {
+                    "score": 4.0,
+                    "thinking": "The notebook contains 3 distinct plots: 1) A histogram showing distribution of inter-trial intervals, 2) A histogram showing distribution of firing rates across units, and 3) A population PSTH plot showing neural responses to stimulation. All plots are effective, well-labeled, and show different aspects of the data analysis (timing, unit characteristics, and neural responses). The plots use appropriate visualization types for their respective data.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}

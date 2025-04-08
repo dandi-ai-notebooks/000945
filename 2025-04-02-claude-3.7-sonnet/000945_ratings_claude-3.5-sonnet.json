@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 10.0,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a comprehensive description of Dandiset 000945 including: 1) Full title, 2) Clear purpose (investigating neural responses to transcranial ultrasound stimulation), 3) Detailed experimental parameters (PRFs: 30Hz-4500Hz, pulse duration: 200\u03bcs, stimulation duration: 67ms), 4) Subject information (10 male rats, ages), 5) Recording details (32-channel electrodes, 500 trials per recording), 6) Data organization (shown through asset exploration), 7) Recording conditions (awake vs anesthetized), and 8) Clear structure of the data content (electrode data, trial information, spiking data). The description is well-organized, starting with an introduction that sets context and systematically exploring the dataset's components.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of Dandiset 000945. It includes the title, describes the purpose (investigating neural responses to transcranial focused ultrasound stimulation), details the experimental setup (electrode type, recording parameters), explains key parameters (PRF values: 30Hz-4500Hz, pulse duration: 200\u03bcs, stimulation duration: 67ms), describes the subject pool (10 male rats), and outlines data organization (recordings across subjects and conditions). The notebook also explains the data structure through code exploration, showing the number of files per subject and their organization. The introduction clearly lays out what data is available and how it was collected.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a very thorough description of Dandiset 000945. It includes:\n    1. Title and ID\n    2. Clear purpose (investigating neural responses to ultrasound stimulation)\n    3. Detailed experimental parameters (PRFs: 30Hz-4500Hz, pulse duration: 200\u03bcs, stimulation duration: 67ms)\n    4. Subject information (10 male rats, ages 8-12 months)\n    5. Recording details (32-channel NeuroNexus electrodes)\n    6. Data organization (shows file structure across subjects)\n    7. Type of data collected (neural spiking data)\n    8. Experimental conditions (awake vs anesthetized)\n    9. Trial structure (500 trials, ~2.5s intervals)\n    The description is well-organized and comprehensive, making it easy to understand the dataset's contents and structure.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 8.0,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong metadata loading capabilities: 1) Successfully connects to DANDI API and loads dandiset 000945, 2) Accesses and prints basic metadata like name and asset count, 3) Organizes and explores assets by subject with visualization, 4) Opens sample NWB file and extracts detailed metadata including session description, subject info, timestamps, 5) Shows how to explore electrode metadata, 6) Extracts experimental parameters like PRF from identifiers. The code executes successfully with meaningful output. However, it does not systematically explore or describe all possible metadata fields that could be available in the dandiset.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates excellent handling of Dandiset information loading. It shows:\n    1. Proper connection to DANDI API and loading of Dandiset 000945\n    2. Retrieval and display of basic metadata including name and asset count\n    3. Organization and exploration of assets by subject\n    4. Visualization of file distribution across subjects\n    5. Detailed examination of individual NWB files including session descriptions, subject info, and experimental parameters\n    6. Clear explanations and context for the metadata being explored\n    However, it doesn't exhaustively explore all possible metadata fields or provide comprehensive field descriptions, which would be needed for a perfect score.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong metadata loading capabilities with:\n    1. Connects to DANDI API and loads Dandiset 000945\n    2. Shows basic metadata like name and total asset count\n    3. Organizes and displays assets by subject\n    4. Creates visualization of file distribution across subjects\n    5. Loads and displays detailed file metadata including subject info, session description, timestamps\n    6. Extracts and displays specific metadata fields like experimental parameters (PRF values)\n    However, it doesn't fully explore all available metadata fields or provide comprehensive field descriptions, falling short of a perfect score.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 7.666666666666667,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong asset handling capabilities: 1) Successfully connects to DANDI API and retrieves Dandiset, 2) Lists and counts all assets (75 total), 3) Organizes assets by subject with detailed summary, 4) Visualizes asset distribution across subjects, 5) Shows how to select specific assets (e.g., BH498 files), 6) Demonstrates loading asset content via Lindi interface, 7) Accesses and displays asset metadata like session info, subject details, etc. However, it doesn't fully explore all asset types or provide extensive examples of different loading approaches.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates several levels of asset handling:\n    - Successfully connects to DANDI API and lists all assets (75 total)\n    - Organizes assets by subject with clear listing\n    - Shows how to select specific assets (e.g., sample file from BH498)\n    - Loads and accesses asset metadata through NWB interface\n    - Includes visualization of asset distribution across subjects\n    - Demonstrates practical usage of loaded assets\n    - However, it doesn't fully explore different asset types or provide comprehensive metadata exploration",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong asset handling capabilities:\n    - Successfully connects to DANDI API and loads the Dandiset\n    - Lists all assets (75 total) using dandiset.get_assets()\n    - Organizes assets by subject with clear visualization\n    - Shows how to select specific assets (e.g., sample file from BH498)\n    - Demonstrates accessing asset metadata including path and identifier\n    - Uses assets with Lindi to load NWB files\n    - Shows practical usage of loaded assets\n    However, it doesn't fully explore all asset types or provide comprehensive metadata exploration across different asset types.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 10.0,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook demonstrates excellent NWB file handling: It successfully loads NWB files using DANDI API, accesses and displays basic metadata (subject info, session details), explores key data structures (electrodes, units, trials), and shows detailed navigation of different components. It demonstrates accessing spike times, electrode positions, trial information, and unit classifications. The code runs without major errors and includes proper error handling. It explores multiple aspects of the NWB hierarchy including intervals, units, and electrodes tables. The notebook also shows how to extract and visualize data from these components through multiple examples.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook demonstrates excellent coverage of NWB file loading and exploration. It successfully:\n    1. Uses DANDI API to access the dataset\n    2. Opens NWB files using pynwb and lindi\n    3. Shows basic metadata (session description, subject info)\n    4. Explores electrodes data structure\n    5. Accesses trials information\n    6. Examines units/spike data\n    7. Shows detailed navigation through various NWB components\n    8. Includes error handling and data validation\n    9. Demonstrates accessing multiple data types (spikes, trials, electrodes)\n    10. Provides clear examples of working with different NWB components and their relationships",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook demonstrates excellent NWB file handling capabilities:\n    - Successfully connects to DANDI and loads a specific NWB file\n    - Shows basic file metadata (session description, identifier, subject info)\n    - Explores multiple key NWB components including electrodes, units, and trials\n    - Demonstrates accessing various data structures (spike times, electrode positions)\n    - Shows hierarchical navigation through different NWB components\n    - Includes error handling and proper file opening procedures\n    - Provides clear examples of extracting and using data from different parts of the NWB structure\n    - Shows both high-level metadata and detailed data access methods\n    - Clear documentation of the NWB structure exploration process",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 9.333333333333334,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates excellent handling of NWB file loading and data access. It shows:\n    1. Use of both DANDI API and Lindi for file access\n    2. Loading and exploring basic metadata (subject info, session details)\n    3. Accessing complex data structures (electrodes, units, trials)\n    4. Proper handling of different data types (spike times, trial times, electrode positions)\n    5. Examples of extracting and processing specific data elements (spike times by cell type)\n    6. Access to nested data structures with clear examples\n    7. Proper error handling with API warnings shown\n    8. Multiple approaches to data access demonstrated\n    9. Careful handling of temporal data and unit information\n    However, it doesn't fully demonstrate some advanced techniques like parallel loading or caching strategies.",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates excellent NWB data loading capabilities. It shows:\n    1. How to connect to DANDI API and access NWB files\n    2. Usage of Lindi for remote file access\n    3. Loading various data types (spike times, electrodes, trials)\n    4. Proper handling of complex data structures (units, intervals, electrodes table)\n    5. Extraction of metadata and subject information\n    6. Access to nested data structures\n    7. Appropriate error handling with warnings displayed\n    8. Example usage of multiple data elements together (spike times with trials)\n    9. Demonstration of metadata exploration and data organization\n    However, it doesn't show some advanced techniques like parallel loading or caching strategies.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook demonstrates comprehensive NWB data loading capabilities: 1) Uses both dandi and lindi APIs to access remote NWB files, 2) Successfully loads and explores multiple data types including electrodes, units, trials and spike times, 3) Handles both simple (arrays) and complex (units) data structures, 4) Shows how to extract metadata and navigate the NWB hierarchy, 5) Includes error handling for data loading, 6) Demonstrates accessing both required and optional NWB fields, 7) Shows how to work with timestamps and event data, 8) Explores relationships between different data types, 9) Includes clear examples of working with both continuous and discrete data. The code successfully runs and produces meaningful visualizations of the loaded data.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 9.0,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates excellent visualization capabilities with NWB files, showing multiple complementary visualization types including:\n    1. Bar plots of dataset structure\n    2. Electrode array position scatter plots\n    3. Trial duration and interval histograms\n    4. Cell type distribution pie charts\n    5. Spike count and firing rate histograms\n    6. Raster plots and PSTHs for individual neurons\n    7. Population-level response comparisons\n    All visualizations are properly labeled with titles, axes, legends, and include helpful markers like stimulation timing. The code is well-documented and includes error handling. The plots effectively convey different aspects of the neural data and build from simple to complex analyses. The only thing preventing a perfect 10 score is that some visualizations could be more polished for publication standards (e.g., consistent font sizes, optimized color schemes).",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates excellent visualization capabilities across multiple data types from NWB files with comprehensive documentation. It includes:\n    1. Bar plots of file counts per subject\n    2. Electrode array position visualization with color-coded depth\n    3. Trial duration and inter-trial interval histograms\n    4. Pie charts of cell type distributions\n    5. Spike count and firing rate distributions by cell type\n    6. Raster plots and PSTHs for individual neurons\n    7. Population-level firing rate comparisons with error bars\n    All visualizations are properly labeled with titles, axes, legends, and use appropriate color schemes. The code includes detailed comments and explanations. The only minor limitation preventing a perfect 10 is that some visualizations could benefit from additional customization options for publication-ready figures.",
+                    "repnum": 1
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates excellent visualization capabilities for NWB data, including:\n    1. Multiple plot types (bar plots, histograms, scatter plots, raster plots, PSTHs)\n    2. Clear visualization of different aspects (electrode positions, spike counts, trial durations, neural responses)\n    3. Proper formatting with titles, labels, legends, and color coding\n    4. Advanced techniques like error bars and comparative visualizations\n    5. Well-documented code with explanatory markdown\n    6. Complex visualizations like combined raster/PSTH plots\n    7. Proper handling of different data types (spike times, trials, electrodes)\n    However, some visualizations could be enhanced with more customization and interactivity",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 8.0,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains multiple well-designed plots that demonstrate high quality visualization practices:\n    - Consistent use of clear titles, axis labels, and legends\n    - Appropriate color schemes and use of alpha for transparency\n    - Good use of error bars and confidence intervals where relevant\n    - Effective use of different plot types (bar charts, histograms, raster plots, PSTH)\n    - Clear gridlines and appropriate figure sizing\n    - Professional formatting with tight_layout for proper spacing\n    - Thoughtful use of dual-panel plots for related data\n    However, it falls slightly short of perfect publication quality as some plots could benefit from:\n    - More consistent font sizes\n    - Additional statistical annotations\n    - Color schemes optimized for colorblindness\n    - Higher resolution output",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains numerous high-quality plots with consistent attention to detail. Key features include:\n    - Consistent use of proper axis labels and titles\n    - Clear legends when multiple data series are present\n    - Appropriate use of color schemes and transparency\n    - Thoughtful use of grid lines to aid readability\n    - Error bars and confidence intervals where relevant\n    - Good use of matplotlib figure sizing\n    - Proper spacing and layout management\n    - Clear markers for important time points (e.g., stimulus onset/offset)\n    However, a few minor improvements could be made:\n    - Some plots could benefit from more descriptive titles\n    - Color schemes could be more consistent across related plots\n    - Font sizes could be optimized for better readability in some cases",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains multiple high-quality plots with consistent formatting. The plots include:\n    - Clear titles and axis labels\n    - Appropriate legends where needed\n    - Good use of color and transparency\n    - Error bars/confidence intervals where relevant\n    - Grid lines for better readability\n    - Proper figure sizing\n    - Good use of subplots where appropriate\n    - Statistical visualization elements (histograms, bar plots, raster plots)\n    However, some minor improvements could be made:\n    - Some plots could benefit from more detailed subtitles\n    - Color schemes could be more consistent across all plots\n    - Font sizes could be more uniform\n    - Some axes could use more descriptive units",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 10.0,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook contains multiple effective plots that demonstrate comprehensive data analysis:\n    1. Bar plot of files per subject\n    2. Electrode array position scatter plot\n    3. Trial duration histogram\n    4. Inter-trial interval histogram\n    5. Pie chart of cell type distribution\n    6. Spike count distribution histogram by cell type\n    7. Firing rate distribution histogram by cell type\n    8. Raster plots and PSTHs for example RSU\n    9. Raster plots and PSTHs for example FSU\n    10. Average response comparison plot\n    11. Bar plot of average firing rates by cell type\n    \n    These plots effectively visualize various aspects of the data using different visualization types (histograms, scatter plots, pie charts, raster plots, line plots, bar plots) and demonstrate thorough data exploration.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook contains multiple effective plots including:\n    1. Bar chart of files per subject\n    2. Electrode array positions scatter plot\n    3. Trial duration histogram\n    4. Inter-trial interval histogram\n    5. Pie chart of cell type distribution\n    6. Spike count distribution histogram by cell type\n    7. Firing rate distribution histogram by cell type\n    8. Raster plots and PSTHs for example RSU\n    9. Raster plots and PSTHs for example FSU\n    10. Average response comparison plot\n    11. Bar plot of average firing rates by cell type\n\n    The plots use diverse visualization methods (histograms, scatter plots, pie charts, raster plots, line plots, bar charts) and effectively demonstrate various aspects of the data (temporal patterns, spatial distribution, cell type differences, firing rates). Each plot is well-labeled with clear titles, axes, and legends.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook contains numerous effective plots covering various aspects of the data:\n    1. Bar plot of files per subject\n    2. Electrode array positions scatter plot\n    3. Two histograms of trial durations and intervals\n    4. Pie chart of cell type distribution\n    5. Two histograms showing spike counts and firing rates by cell type\n    6. Two sets of raster plots and PSTHs (one each for RSU and FSU)\n    7. Average response plot comparing RSU and FSU responses over time\n    8. Bar plot of average firing rates across different time windows\n    These plots effectively demonstrate different data aspects using diverse visualization methods (histograms, scatter plots, pie charts, raster plots, time series, etc.)",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}
