@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 7.666666666666667,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook provides a good description of the Dandiset. It includes the ID, and gives a good overview of the content. It mentions that the dataset includes neural recordings from the somatosensory cortex of awake head-fixed rats during trials of transcranial focused ultrasound stimulation. Key details such as the use of 32-channel NeuroNexus electrodes, the pulse repetition frequencies (PRFs), the number of trials, and the ultrasound stimulation timing are also mentioned. This all amounts to a comprehensive description of the Dandiset's contents and structure. The purpose, content and key metadata are all mentioned.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook provides the Dandiset ID, the title, and a good overview of the contents, including the experimental setup, the type of data recorded, and the number of trials. Key information such as the PRF and stimulation parameters are included. The notebook gives a good description of the Dandiset purpose, contents, and basic metadata.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook provides the Dandiset ID and a brief overview of the Dandiset content, including information about the recordings, species, and stimulation parameters. It clearly describes the purpose of the Dandiset and the basic contents within it. It also mentions key aspects of the experimental design. The description is not comprehensive but provides a detailed overview.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 6.666666666666667,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads the Dandiset using the DandiAPIClient and retrieves some basic metadata such as session ID, session description, institution, species, sex and age. It does not explore all potential metadata fields but it covers the basics. Therefore, it deserves a 6.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook uses the DandiAPIClient to access the dandiset and its components. It successfully retrieves and prints the dandiset id, session description, institution, and subject information, including species, sex, and age. This demonstrates a good understanding of how to load and explore several key metadata fields within the dandiset. There are more metadata fields that could have been included. Thus the score should be a 7.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook uses the DandiAPIClient to load information about the Dandiset, including the Dandiset ID and a list of assets. It then prints the total number of assets. The notebook loads the Dandiset and reads session information, description, institution and subject information, including species, sex, and age. Therefore, the notebook successfully loads and explores multiple metadata fields.\n\nThe metadata extracted includes session ID, description, institution, and subject information such as species, sex, and age. This demonstrates a reasonable exploration of metadata. The notebook lacks a complete demonstration of loading and working with all key metadata fields because it does not delve into aspects like experimenters, keywords, or related publications, which are potentially part of the dandiset metadata. It also does not provide in-depth explanations about the specific fields. Therefore, I'll give it a score of 7.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully lists the available assets in the Dandiset (INPUT-CODE in cell 3 returns the total number of assets) and loads a specific asset (nwb file) in cell 4 and extracts basic information from it. Therefore, the notebook demonstrates loading specific assets.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates how to load assets from a DANDI dandiset. It first lists available assets and then proceeds to load the contents of a specific NWB file asset into the notebook, printing some basic session information which is part of the asset's metadata. Therefore, I think the notebook deserves a score of 6.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully lists the available assets in the Dandiset (INPUT-CODE cell with `dandiapi.DandiAPIClient`), and also demonstrates how to load a specific asset (the NWB file) using `lindi.LindiH5pyFile.from_lindi_file`. It then accesses basic session information, i.e. some metadata. Thus, it goes beyond simply listing assets and demonstrates loading and using them. It does not explore multiple asset types or do comprehensive metadata exploration.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 6.666666666666667,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook loads the NWB file, accesses basic information like session ID, description, institution, and subject information (species, sex, age). It also accesses trial information and spiking data, demonstrating access to multiple NWB data structures. So it gets a 7.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file from a remote resource and accesses its basic components such as session ID, description, institution, and subject information. It further accesses trials and unit information and calculates basic metrics such as inter-trial intervals and firing rates. Therefore, it demonstrates accessing basic NWB components well.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully loads an NWB file from a DANDI link. The code then prints the session ID, session description, institution and subject information (species, sex, age), demonstrating accessing basic NWB components. Furthermore, the code navigates into `nwb.intervals[\"trials\"]` and `nwb.units` to access trial start/stop times, and unit spike times, which shows exploration of multiple NWB data structures. Therefore the notebook demonstrates accessing basic NWB components and explores multiple NWB data structures.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 7.333333333333333,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file from a DANDI asset using lindi and pynwb. It then accesses several important data elements, including session information, trial structure (start and stop times), and neural spiking data (spike times and unit IDs). The notebook demonstrates how to access multiple data elements and handles different data types (e.g., numerical arrays for trial times and spike times). It uses these loaded components to perform further analysis. Therefore, the notebook accomplishes loading specific data types and how to access those components.",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook successfully loads data from the NWB file, including session information, trial structure, and neural activity (spike times). It demonstrates accessing several data elements like 'trials', 'units', 'spike_times', etc. which contain differnt data types like numerical and string data. The notebook covers multiple data access techniques to successfully load and visualize several data elements. Loading the data from lindi is also presented here, which is a sophisticated approach, moving the score above 7. The loading and processing is well represented including the use of pynwb so the score is justified at 9. The notebook does miss how to handle all possible data types, and does not present very advanced techniques, justifying the score being below 10.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates loading data from an NWB file using both `lindi` and `pynwb`. It accesses several key data elements such as session information, trial structure, and neural spiking data. The notebook correctly handles different data types when calculating and plotting inter-trial intervals, firing rates, and PSTHs. It goes beyond basic arrays by exploring structured data, like the trials table. However, it could delve deeper into exploring more complex data structures (segmentation, electrodes, etc) and doesn't showcase any advanced data access techniques. Therefore, it falls in the middle of demonstrating data loading and handling from NWB files. The notebook uses `lindi` to load the data from a URL, which is a good method. It also accesses trial timing, and neural data, and computes PSTH. Although more data types could be explored, the notebook demonstrates a good understanding for loading data from NWB files.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates several basic visualization techniques for exploring neural data from an NWB file within a DANDI dataset, including histograms of inter-trial intervals and firing rates, and a peri-stimulus time histogram (PSTH) to show neural responses to stimulation. The visualizations are relatively clear and have appropriate labels. However, the visualizations are fairly basic. Therefore, a score of 7 is appropriate.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook visualizes inter-trial intervals, firing rates, and peri-stimulus time histograms (PSTH). The plots are properly labeled with axes labels and titles, enhancing clarity, albeit simple. Therefore, it earns a score of 7.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook provides multiple types of visualizations, including histograms of inter-trial intervals and firing rates, and a peri-stimulus time histogram (PSTH). The plots are labeled and include titles, and the PSTH includes a shaded error region. Thus, the score is 7.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 6.333333333333333,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook includes three plots: a distribution of inter-trial intervals, a distribution of firing rates, and a population PSTH. The plots use seaborn's default theme, which is visually appealing. The plots are generally readable and have basic labels (x and y axis labels, titles, and legends where appropriate). The x and y axis labels include units. However, there is always room for improvement.\n\nFor example, the firing rate distribution shows a small number of firing rates from 20 to 60 Hz. It may be useful to either increase the number of bins, or change the x-axis to a log scale. Meanwhile the PSTH plot is relatively noisy and it would take some work to interpret.\n\nOverall, the plot quality is decent, but there is room for improvement. So I'm rating the plots as a 6.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains three plots: a histogram of inter-trial intervals, a histogram of firing rates, and a population PSTH. The plots have basic labels and are readable. The PSTH plot includes a shaded region for standard error, which enhances its quality. While they are not publication-ready, they are clear and well-formatted. Thus, the plots are of quality 7.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The plots are all readable, have basic labels, and were generated with a reasonable choice of plot types given the data. The plots are clear and properly formatted. Each axis is labeled. The PSTH plot includes a shaded region indicating standard error. Therefore, the notebook deserves a score of 6.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 5.0,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains three plots: distribution of inter-trial intervals, distribution of firing rates, and population PSTH. These plots visualize different aspects of the neural data, including trial timing and neural activity. While there are only three plots, they are reasonably effective in demonstrating the data variety. Hence the score corresponds to the category \"Three effective plots demonstrating data variety\".",
+                    "repnum": 0
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook includes three effective plots: the distribution of inter-trial intervals, the distribution of firing rates, and the population PSTH. Each plot visualizes a different aspect of the data and contributes to the analysis. Therefore, the notebook contains three effective plots demonstrating data variety.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains three plots. The first plot shows the distribution of inter-trial intervals. The second plot illustrates the distribution of firing rates. The third plot (PSTH) shows neural activity relative to stimulation time, depicting mean firing rate and standard error. All plots provide distinct insights into the data, and their visualization choices effectively highlight those insights.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}

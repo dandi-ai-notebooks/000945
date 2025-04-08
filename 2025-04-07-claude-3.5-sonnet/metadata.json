@@ -1,0 +1,17 @@
+{
+  "dandi_notebook_gen_version": "0.1.0",
+  "system_info": {
+    "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+    "hostname": "jupyter-magland",
+    "processor": "x86_64",
+    "python_version": "3.11.10"
+  },
+  "model": "anthropic/claude-3.5-sonnet",
+  "vision_model": "anthropic/claude-3.5-sonnet",
+  "total_prompt_tokens": 264434,
+  "total_completion_tokens": 6084,
+  "total_vision_prompt_tokens": 3411,
+  "total_vision_completion_tokens": 599,
+  "timestamp": "2025-04-07 14:50:38",
+  "elapsed_time_seconds": 256.2779276371002
+}
