@@ -1,0 +1,17 @@
+{
+  "dandiset_id": "000945",
+  "model": "openrouter/quasar-alpha",
+  "prompt": "prompt-a-1.txt",
+  "total_prompt_tokens": 64978,
+  "total_completion_tokens": 2986,
+  "total_vision_prompt_tokens": 0,
+  "total_vision_completion_tokens": 0,
+  "elapsed_time_seconds": 105.05083656311035,
+  "timestamp": "2025-04-10 13:55:02",
+  "system_info": {
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "hostname": "system76-pc",
+    "processor": "x86_64",
+    "python_version": "3.12.2"
+  }
+}

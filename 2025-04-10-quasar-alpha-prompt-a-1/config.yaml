@@ -1,0 +1,3 @@
+model: openrouter/quasar-alpha
+prompt: prompt-a-1.txt
+dandiset_id: "000945"
