@@ -1,0 +1,1697 @@
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+First, I need to understand what Dandiset 000945 contains. I'll use the tools_cli.py script to get information about the Dandiset, its assets, and how to load data from the NWB files. This will give me context for creating the notebook.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-info 000945', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-info 000945
+================================
+{
+  "results": {
+    "id": "DANDI:000945/draft",
+    "name": "Neural Spiking Data in the Awake Rat Somatosensory Cortex Responding to Trials of Transcranial Focused Ultrasound Stimulation",
+    "about": [],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "draft",
+    "citation": "Ramachandran, Sandhya; Gao, Huan; Yu, Kai; He, Bin (2025) Neural Spiking Data in the Awake Rat Somatosensory Cortex Responding to Trials of Transcranial Focused Ultrasound Stimulation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000945/draft",
+    "keywords": [],
+    "protocol": [],
+    "identifier": "DANDI:000945",
+    "contributor": [
+      "Ramachandran, Sandhya",
+      "Gao, Huan",
+      "Yu, Kai",
+      "He, Bin",
+      "Carnegie Mellon University",
+      "NIH NS124564",
+      "NIH EB029354",
+      "NIH NS131069"
+    ],
+    "dateCreated": "2024-03-30T03:06:13.114761+00:00",
+    "description": "In these recordings, we tested different PRFs (pulse repetition frequencies) of ultrasound stimulation using a 128-element random array ultrasound transducer to stimulate the somatosensory cortex of awake head-fixed rats. Chronic electrophysiological recordings were acquired using 32-channel NeuroNexus electrodes (Model: A1x32-Poly3-10mm-50-177-Z32), chronically implanted into the rat brain. Ultrasound stimulation is delivered every 2.5 seconds with a 10% jitter, and each recording has 500 trials. The PRFs tested were 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz, each with a 200 microsecond pulse duration and a 67 ms ultrasound duration. Anesthetized files were performed under 2% isoflurane anesthesia for comparison.\n\nFile Information\nAll 10 subjects were male rats, implanted with their chronic electrode at 6 months of age and then recordings taken first at 8-10 months, and then some repeats taken at 12 months. Within each subject's folder are recordings for the different PRFs. Most subjects have 5 recordings within, one for each PRF. Some subjects have duplicate recordings taken a few months after the original ones. A few recordings were not included due to excessive noise in the recordings. Files are named in the format SubjectName_PRF_PulseDuration. Each file contains spike time data with the cell type labels included for each neurons, as well as time series data for the onset of each trial of ultrasound stimulation.",
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+Total prompt tokens: 8485 + 0
+Total completion tokens: 157 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-info 000945' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "id": "DANDI:000945/draft",
+    "name": "Neural Spiking Data in the Awake Rat Somatosensory Cortex Responding to Trials of Transcranial Focused Ultrasound Stimulation",
+    "about": [],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "draft",
+    "citation": "Ramachandran, Sandhya; Gao, Huan; Yu, Kai; He, Bin (2025) Neural Spiking Data in the Awake Rat Somatosensory Cortex Responding to Trials of Transcranial Focused Ultrasound Stimulation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000945/draft",
+    "keywords": [],
+    "protocol": [],
+    "identifier": "DANDI:000945",
+    "contributor": [
+      "Ramachandran, Sandhya",
+      "Gao, Huan",
+      "Yu, Kai",
+      "He, Bin",
+      "Carnegie Mellon University",
+      "NIH NS124564",
+      "NIH EB029354",
+      "NIH NS131069"
+    ],
+    "dateCreated": "2024-03-30T03:06:13.114761+00:00",
+    "description": "In these recordings, we tested different PRFs (pulse repetition frequencies) of ultrasound stimulation using a 128-element random array ultrasound transducer to stimulate the somatosensory cortex of awake head-fixed rats. Chronic electrophysiological recordings were acquired using 32-channel NeuroNexus electrodes (Model: A1x32-Poly3-10mm-50-177-Z32), chronically implanted into the rat brain. Ultrasound stimulation is delivered every 2.5 seconds with a 10% jitter, and each recording has 500 trials. The PRFs tested were 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz, each with a 200 microsecond pulse duration and a 67 ms ultrasound duration. Anesthetized files were performed under 2% isoflurane anesthesia for comparison.\n\nFile Information\nAll 10 subjects were male rats, implanted with their chronic electrode at 6 months of age and then recordings taken first at 8-10 months, and then some repeats taken at 12 months. Within each subject's folder are recordings for the different PRFs. Most subjects have 5 recordings within, one for each PRF. Some subjects have duplicate recordings taken a few months after the original ones. A few recordings were not included due to excessive noise in the recordings. Files are named in the format SubjectName_PRF_PulseDuration. Each file contains spike time data with the cell type labels included for each neurons, as well as time series data for the onset of each trial of ultrasound stimulation.",
+    "variableMeasured": [
+      "ElectrodeGroup",
+      "Units"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "spike sorting technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 4
+Submitting completion request...
+Processing response...
+I need to get a list of the assets (files) available in the Dandiset. This will help me understand what data is available and choose appropriate NWB files to analyze in the notebook.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-assets 000945', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-assets 000945
+================================
+{
+  "results": {
+    "count": 75,
+    "results": [
+      {
+        "asset_id": "a4e04662-e4cb-49f3-9076-41e04e833a11",
+        "path": "sub-BH497/sub-BH497_ses-20240310T143729_ecephys.nwb",
+        "size": 9797128
+      },
+      {
+        "asset_id": "526c681d-0c50-44e1-92be-9c0134c71fd8",
+        "path": "sub-BH497/sub-BH497_ses-20240310T145053_ecephys.nwb",
+        "size": 9352600
+      },
+      {
+        "asset_id": "f88a9bec-23d6-4444-8b97-8083e45057c9",
+        "path": "sub-BH497/sub-BH497_ses-20240310T145814_ecephys.nwb",
+        "size": 11900768
+      },
+      {
+        "asset_id": "a7549e3f-9b14-432a-be65-adb5f6811343",
+        "path": "sub-BH497/sub-BH497_ses-20240310T150748_ecephys.nwb",
+        "size": 12848752
+      },
+      {
+        "asset_id": "02151b40-5064-4ba1-a5b7-d0473ff09262",
+        "path": "sub-BH497/sub-BH497_ses-20240310T152652_ecephys.nwb",
+        "size": 11445120
+      },
+      {
+        "asset_id": "76429bc6-027e-4350-8cf3-e8568db28e58",
+        "path": "sub-BH498/sub-BH498_ses-20230906T180913_ecephys.nwb",
+        "size": 6736848
+      },
+      {
+        "asset_id": "845dc047-915e-461b-85de-f029b4c8b16f",
+        "path": "sub-BH498/sub-BH498_ses-20240305T191833_ecephys.nwb",
+        "size": 5586808
+      },
+      {
+        "asset_id": "d1fa906a-2dc2-4b71-a9e6-26eceafdc21a",
+        "path": "sub-BH498/sub-BH498_ses-20240305T200606_ecephys.nwb",
+        "size": 2555728
+      },
+      {
+        "asset_id": "74cb8afa-730d-425b-bf6b-859c04217cac",
+        "path": "sub-BH498/sub-BH498_ses-20240305T204552_ecephys.nwb",
+        "size": 4293592
+      },
+      {
+        "asset_id": "bbd6a696-a68a-4790-820e-02794bd7829d",
+        "path": "sub-BH498/sub-BH498_ses-20240306T124227_ecephys.nwb",
+        "size": 1674720
+      },
+      {
+        "asset_id": "a560cda8-54de-42f6-9c7f-f1b5e6dfb53f",
+        "path": "sub-BH498/sub-BH498_ses-20240306T175805_ecephys.nwb",
+        "size": 465000
+      },
+      {
+        "asset_id": "f68ae65b-05e1-4ad2-8897-c3374ea65054",
+        "path": "sub-BH498/sub-BH498_ses-20240306T184536_ecephys.nwb",
+        "size": 3340696
+      },
+      {
+        "asset_id": "aff9a3be-9745-4787-b62e-f7028a630daa",
+        "path": "sub-BH498/sub-BH498_ses-20240306T231317_ecephys.nwb",
+        "size": 3538224
+      },
+      {
+        "asset_id": "42b45ddf-050f-4ae7-a34e-d5b9d8d991fe",
+        "path": "sub-BH498/sub-BH498_ses-20240310T143729_ecephys.nwb",
+        "size": 9796912
+      },
+      {
+        "asset_id": "0bce1d5d-8635-470e-b497-f0b350cbf058",
+        "path": "sub-BH498/sub-BH498_ses-20240310T145053_ecephys.nwb",
+        "size": 9352384
+      },
+      {
+        "asset_id": "e35653b4-0a0b-41bf-bf71-0c37e0d96509",
+        "path": "sub-BH498/sub-BH498_ses-20240310T145814_ecephys.nwb",
+        "size": 11900552
+      },
+      {
+        "asset_id": "6c7c91a9-d339-4c73-b0a0-5df2d050f324",
+        "path": "sub-BH498/sub-BH498_ses-20240310T150748_ecephys.nwb",
+        "size": 12848536
+      },
+      {
+        "asset_id": "f880f498-f5c7-4c99-9d64-5cb4a4973833",
+        "path": "sub-BH498/sub-BH498_ses-20240310T152652_ecephys.nwb",
+        "size": 11444904
+      },
+      {
+        "asset_id": "655fe6cf-a152-412b-9d20-71c6db670629",
+        "path": "sub-BH506/sub-BH506_ses-20231018T181609_ecephys.nwb",
+        "size": 3854672
+      },
+      {
+        "asset_id": "b353fb55-5a3d-4961-81a2-c121f31c5344",
+        "path": "sub-BH506/sub-BH506_ses-20231026T155106_ecephys.nwb",
+        "size": 6579480
+      }
+    ]
+  }
+}
+Total prompt tokens: 18100 + 0
+Total completion tokens: 278 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-assets 000945' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "count": 75,
+    "results": [
+      {
+        "asset_id": "a4e04662-e4cb-49f3-9076-41e04e833a11",
+        "path": "sub-BH497/sub-BH497_ses-20240310T143729_ecephys.nwb",
+        "size": 9797128
+      },
+      {
+        "asset_id": "526c681d-0c50-44e1-92be-9c0134c71fd8",
+        "path": "sub-BH497/sub-BH497_ses-20240310T145053_ecephys.nwb",
+        "size": 9352600
+      },
+      {
+        "asset_id": "f88a9bec-23d6-4444-8b97-8083e45057c9",
+        "path": "sub-BH497/sub-BH497_ses-20240310T145814_ecephys.nwb",
+        "size": 11900768
+      },
+      {
+        "asset_id": "a7549e3f-9b14-432a-be65-adb5f6811343",
+        "path": "sub-BH497/sub-BH497_ses-20240310T150748_ecephys.nwb",
+        "size": 12848752
+      },
+      {
+        "asset_id": "02151b40-5064-4ba1-a5b7-d0473ff09262",
+        "path": "sub-BH497/sub-BH497_ses-20240310T152652_ecephys.nwb",
+        "size": 11445120
+      },
+      {
+        "asset_id": "76429bc6-027e-4350-8cf3-e8568db28e58",
+        "path": "sub-BH498/sub-BH498_ses-20230906T180913_ecephys.nwb",
+        "size": 6736848
+      },
+      {
+        "asset_id": "845dc047-915e-461b-85de-f029b4c8b16f",
+        "path": "sub-BH498/sub-BH498_ses-20240305T191833_ecephys.nwb",
+        "size": 5586808
+      },
+      {
+        "asset_id": "d1fa906a-2dc2-4b71-a9e6-26eceafdc21a",
+        "path": "sub-BH498/sub-BH498_ses-20240305T200606_ecephys.nwb",
+        "size": 2555728
+      },
+      {
+        "asset_id": "74cb8afa-730d-425b-bf6b-859c04217cac",
+        "path": "sub-BH498/sub-BH498_ses-20240305T204552_ecephys.nwb",
+        "size": 4293592
+      },
+      {
+        "asset_id": "bbd6a696-a68a-4790-820e-02794bd7829d",
+        "path": "sub-BH498/sub-BH498_ses-20240306T124227_ecephys.nwb",
+        "size": 1674720
+      },
+      {
+        "asset_id": "a560cda8-54de-42f6-9c7f-f1b5e6dfb53f",
+        "path": "sub-BH498/sub-BH498_ses-20240306T175805_ecephys.nwb",
+        "size": 465000
+      },
+      {
+        "asset_id": "f68ae65b-05e1-4ad2-8897-c3374ea65054",
+        "path": "sub-BH498/sub-BH498_ses-20240306T184536_ecephys.nwb",
+        "size": 3340696
+      },
+      {
+        "asset_id": "aff9a3be-9745-4787-b62e-f7028a630daa",
+        "path": "sub-BH498/sub-BH498_ses-20240306T231317_ecephys.nwb",
+        "size": 3538224
+      },
+      {
+        "asset_id": "42b45ddf-050f-4ae7-a34e-d5b9d8d991fe",
+        "path": "sub-BH498/sub-BH498_ses-20240310T143729_ecephys.nwb",
+        "size": 9796912
+      },
+      {
+        "asset_id": "0bce1d5d-8635-470e-b497-f0b350cbf058",
+        "path": "sub-BH498/sub-BH498_ses-20240310T145053_ecephys.nwb",
+        "size": 9352384
+      },
+      {
+        "asset_id": "e35653b4-0a0b-41bf-bf71-0c37e0d96509",
+        "path": "sub-BH498/sub-BH498_ses-20240310T145814_ecephys.nwb",
+        "size": 11900552
+      },
+      {
+        "asset_id": "6c7c91a9-d339-4c73-b0a0-5df2d050f324",
+        "path": "sub-BH498/sub-BH498_ses-20240310T150748_ecephys.nwb",
+        "size": 12848536
+      },
+      {
+        "asset_id": "f880f498-f5c7-4c99-9d64-5cb4a4973833",
+        "path": "sub-BH498/sub-BH498_ses-20240310T152652_ecephys.nwb",
+        "size": 11444904
+      },
+      {
+        "asset_id": "655fe6cf-a152-412b-9d20-71c6db670629",
+        "path": "sub-BH506/sub-BH506_ses-20231018T181609_ecephys.nwb",
+        "size": 3854672
+      },
+      {
+        "asset_id": "b353fb55-5a3d-4961-81a2-c121f31c5344",
+        "path": "sub-BH506/sub-BH506_ses-20231026T155106_ecephys.nwb",
+        "size": 6579480
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 6
+Submitting completion request...
+Processing response...
+The output shows 20 assets out of a total count of 75, so there are more assets that were not displayed. To get a better understanding of the Dandiset, I'll continue examining the available data by selecting one NWB file to explore its structure and contents.
+
+For my notebook, I think I'll select a file from subject BH497: "sub-BH497/sub-BH497_ses-20240310T143729_ecephys.nwb" with asset_id "a4e04662-e4cb-49f3-9076-41e04e833a11". 
+
+Now I'll use the nwb-file-info command to get information about this specific NWB file, which will help me understand its structure and how to load data from it.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py nwb-file-info 000945 https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py nwb-file-info 000945 https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-common' version 1.5.0 because version 1.8.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.5.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-experimental' version 0.1.0 because version 0.5.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/dandi-ai-notebooks-2/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:319: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) Awake S1 Stimulation by tFUS
+nwb.identifier # (str) BH498_3000_200_anes
+nwb.session_start_time # (datetime) 2024-03-10T14:37:29-04:00
+nwb.timestamps_reference_time # (datetime) 2024-03-10T14:37:29-04:00
+nwb.file_create_date # (list) [datetime.datetime(2024, 3, 29, 23, 25, 55, tzinfo=tzoffset(None, -14400)), datetime.datetime(2024, 3, 29, 23, 25, 55, 259000, tzinfo=tzoffset(None, -14400))]
+nwb.electrode_groups # (LabelledDict)
+nwb.electrode_groups["shank1"] # (ElectrodeGroup)
+nwb.electrode_groups["shank1"].description # (str) electrode group for shank1
+nwb.electrode_groups["shank1"].location # (str) brain area
+nwb.electrode_groups["shank1"].device # (Device)
+nwb.electrode_groups["shank1"].device.description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.electrode_groups["shank1"].device.manufacturer # (str) Neuronexus
+nwb.devices # (LabelledDict)
+nwb.devices["array"] # (Device)
+nwb.devices["array"].description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.devices["array"].manufacturer # (str) Neuronexus
+nwb.intervals # (LabelledDict)
+nwb.intervals["trials"] # (TimeIntervals)
+nwb.intervals["trials"].description # (str) tFUS stimulation trial onset and offset
+nwb.intervals["trials"].colnames # (tuple) ['start_time', 'stop_time']
+nwb.intervals["trials"].columns # (tuple)
+nwb.intervals["trials"].id # (ElementIdentifiers)
+# nwb.intervals["trials"].to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.intervals["trials"].to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.intervals["trials"].start_time # (VectorData) start time of trial
+nwb.intervals["trials"].stop_time # (VectorData) end of each trial
+nwb.institution # (str) Carnegie Mellon University
+nwb.electrodes # (DynamicTable)
+nwb.electrodes.description # (str) all electrodes
+nwb.electrodes.colnames # (tuple) ['x', 'y', 'z', 'imp', 'location', 'filtering', 'group', 'group_name']
+nwb.electrodes.columns # (tuple)
+nwb.electrodes.id # (ElementIdentifiers)
+# nwb.electrodes.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 32 rows and 8 columns
+# nwb.electrodes.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 32
+nwb.electrodes.x # (VectorData) my description
+nwb.electrodes.y # (VectorData) my description
+nwb.electrodes.z # (VectorData) my description
+nwb.electrodes.imp # (VectorData) my description
+nwb.electrodes.location # (VectorData) my description
+nwb.electrodes.filtering # (VectorData) my description
+nwb.electrodes.group # (VectorData) my description
+nwb.electrodes.group_name # (VectorData) my description
+nwb.subject # (Subject)
+nwb.subject.age # (str) P24W
+nwb.subject.description # (str) HSD:WI rat
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Rattus norvegicus
+nwb.subject.subject_id # (str) BH497
+nwb.trials # (TimeIntervals)
+nwb.trials.description # (str) tFUS stimulation trial onset and offset
+nwb.trials.colnames # (tuple) ['start_time', 'stop_time']
+nwb.trials.columns # (tuple)
+nwb.trials.id # (ElementIdentifiers)
+# nwb.trials.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.trials.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.trials.start_time # (VectorData) start time of trial
+nwb.trials.stop_time # (VectorData) end of each trial
+nwb.units # (Units)
+nwb.units.description # (str) units table
+nwb.units.colnames # (tuple) ['spike_times', 'celltype_label']
+nwb.units.columns # (tuple)
+nwb.units.waveform_unit # (str) volts
+nwb.units.id # (ElementIdentifiers)
+# nwb.units.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 64 rows and 3 columns
+# nwb.units.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 64
+nwb.units.spike_times # (VectorIndex) Index for VectorData 'spike_times'
+# nwb.units.spike_times_index[0] # (ndarray)
+# nwb.units.spike_times_index[1] # (ndarray)
+# nwb.units.spike_times_index[2] # (ndarray)
+# nwb.units.spike_times_index[3] # (ndarray)
+# ...
+nwb.units.celltype_label # (VectorData) label 1 = RSU, label 2 = FSU
+Total prompt tokens: 29603 + 0
+Total completion tokens: 586 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py nwb-file-info 000945 https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/' (requires approval):
+Command executed successfully
+STDOUT:
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/a4e04662-e4cb-49f3-9076-41e04e833a11/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) Awake S1 Stimulation by tFUS
+nwb.identifier # (str) BH498_3000_200_anes
+nwb.session_start_time # (datetime) 2024-03-10T14:37:29-04:00
+nwb.timestamps_reference_time # (datetime) 2024-03-10T14:37:29-04:00
+nwb.file_create_date # (list) [datetime.datetime(2024, 3, 29, 23, 25, 55, tzinfo=tzoffset(None, -14400)), datetime.datetime(2024, 3, 29, 23, 25, 55, 259000, tzinfo=tzoffset(None, -14400))]
+nwb.electrode_groups # (LabelledDict)
+nwb.electrode_groups["shank1"] # (ElectrodeGroup)
+nwb.electrode_groups["shank1"].description # (str) electrode group for shank1
+nwb.electrode_groups["shank1"].location # (str) brain area
+nwb.electrode_groups["shank1"].device # (Device)
+nwb.electrode_groups["shank1"].device.description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.electrode_groups["shank1"].device.manufacturer # (str) Neuronexus
+nwb.devices # (LabelledDict)
+nwb.devices["array"] # (Device)
+nwb.devices["array"].description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.devices["array"].manufacturer # (str) Neuronexus
+nwb.intervals # (LabelledDict)
+nwb.intervals["trials"] # (TimeIntervals)
+nwb.intervals["trials"].description # (str) tFUS stimulation trial onset and offset
+nwb.intervals["trials"].colnames # (tuple) ['start_time', 'stop_time']
+nwb.intervals["trials"].columns # (tuple)
+nwb.intervals["trials"].id # (ElementIdentifiers)
+# nwb.intervals["trials"].to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.intervals["trials"].to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.intervals["trials"].start_time # (VectorData) start time of trial
+nwb.intervals["trials"].stop_time # (VectorData) end of each trial
+nwb.institution # (str) Carnegie Mellon University
+nwb.electrodes # (DynamicTable)
+nwb.electrodes.description # (str) all electrodes
+nwb.electrodes.colnames # (tuple) ['x', 'y', 'z', 'imp', 'location', 'filtering', 'group', 'group_name']
+nwb.electrodes.columns # (tuple)
+nwb.electrodes.id # (ElementIdentifiers)
+# nwb.electrodes.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 32 rows and 8 columns
+# nwb.electrodes.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 32
+nwb.electrodes.x # (VectorData) my description
+nwb.electrodes.y # (VectorData) my description
+nwb.electrodes.z # (VectorData) my description
+nwb.electrodes.imp # (VectorData) my description
+nwb.electrodes.location # (VectorData) my description
+nwb.electrodes.filtering # (VectorData) my description
+nwb.electrodes.group # (VectorData) my description
+nwb.electrodes.group_name # (VectorData) my description
+nwb.subject # (Subject)
+nwb.subject.age # (str) P24W
+nwb.subject.description # (str) HSD:WI rat
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Rattus norvegicus
+nwb.subject.subject_id # (str) BH497
+nwb.trials # (TimeIntervals)
+nwb.trials.description # (str) tFUS stimulation trial onset and offset
+nwb.trials.colnames # (tuple) ['start_time', 'stop_time']
+nwb.trials.columns # (tuple)
+nwb.trials.id # (ElementIdentifiers)
+# nwb.trials.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.trials.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.trials.start_time # (VectorData) start time of trial
+nwb.trials.stop_time # (VectorData) end of each trial
+nwb.units # (Units)
+nwb.units.description # (str) units table
+nwb.units.colnames # (tuple) ['spike_times', 'celltype_label']
+nwb.units.columns # (tuple)
+nwb.units.waveform_unit # (str) volts
+nwb.units.id # (ElementIdentifiers)
+# nwb.units.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 64 rows and 3 columns
+# nwb.units.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 64
+nwb.units.spike_times # (VectorIndex) Index for VectorData 'spike_times'
+# nwb.units.spike_times_index[0] # (ndarray)
+# nwb.units.spike_times_index[1] # (ndarray)
+# nwb.units.spike_times_index[2] # (ndarray)
+# nwb.units.spike_times_index[3] # (ndarray)
+# ...
+nwb.units.celltype_label # (VectorData) label 1 = RSU, label 2 = FSU
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-common' version 1.5.0 because version 1.8.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.5.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-experimental' version 0.1.0 because version 0.5.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/dandi-ai-notebooks-2/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:319: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 8
+Submitting completion request...
+Processing response...
+I've obtained information about one NWB file, but it would be helpful to examine another file to understand any differences between sessions or PRF conditions. According to the Dandiset description, they tested different pulse repetition frequencies (PRFs): 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz.
+
+The file I just examined appears to be for 3000 Hz PRF based on the identifier "BH498_3000_200_anes". Let me examine another file with a different PRF to understand the variation in the dataset.
+
+I'll select another file from a different subject: "sub-BH506/sub-BH506_ses-20231018T181609_ecephys.nwb" with asset_id "655fe6cf-a152-412b-9d20-71c6db670629".
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py nwb-file-info 000945 https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py nwb-file-info 000945 https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-common' version 1.5.0 because version 1.8.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.5.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-experimental' version 0.1.0 because version 0.5.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/dandi-ai-notebooks-2/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:319: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) Awake S1 Stimulation by tFUS
+nwb.identifier # (str) BH506_1500_200
+nwb.session_start_time # (datetime) 2023-10-18T18:16:09-04:00
+nwb.timestamps_reference_time # (datetime) 2023-10-18T18:16:09-04:00
+nwb.file_create_date # (list) [datetime.datetime(2024, 3, 29, 22, 34, 43, tzinfo=tzoffset(None, -14400)), datetime.datetime(2024, 3, 29, 22, 34, 43, 501000, tzinfo=tzoffset(None, -14400))]
+nwb.electrode_groups # (LabelledDict)
+nwb.electrode_groups["shank1"] # (ElectrodeGroup)
+nwb.electrode_groups["shank1"].description # (str) electrode group for shank1
+nwb.electrode_groups["shank1"].location # (str) brain area
+nwb.electrode_groups["shank1"].device # (Device)
+nwb.electrode_groups["shank1"].device.description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.electrode_groups["shank1"].device.manufacturer # (str) Neuronexus
+nwb.devices # (LabelledDict)
+nwb.devices["array"] # (Device)
+nwb.devices["array"].description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.devices["array"].manufacturer # (str) Neuronexus
+nwb.intervals # (LabelledDict)
+nwb.intervals["trials"] # (TimeIntervals)
+nwb.intervals["trials"].description # (str) tFUS stimulation trial onset and offset
+nwb.intervals["trials"].colnames # (tuple) ['start_time', 'stop_time']
+nwb.intervals["trials"].columns # (tuple)
+nwb.intervals["trials"].id # (ElementIdentifiers)
+# nwb.intervals["trials"].to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.intervals["trials"].to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.intervals["trials"].start_time # (VectorData) start time of trial
+nwb.intervals["trials"].stop_time # (VectorData) end of each trial
+nwb.institution # (str) Carnegie Mellon University
+nwb.electrodes # (DynamicTable)
+nwb.electrodes.description # (str) all electrodes
+nwb.electrodes.colnames # (tuple) ['x', 'y', 'z', 'imp', 'location', 'filtering', 'group', 'group_name']
+nwb.electrodes.columns # (tuple)
+nwb.electrodes.id # (ElementIdentifiers)
+# nwb.electrodes.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 32 rows and 8 columns
+# nwb.electrodes.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 32
+nwb.electrodes.x # (VectorData) my description
+nwb.electrodes.y # (VectorData) my description
+nwb.electrodes.z # (VectorData) my description
+nwb.electrodes.imp # (VectorData) my description
+nwb.electrodes.location # (VectorData) my description
+nwb.electrodes.filtering # (VectorData) my description
+nwb.electrodes.group # (VectorData) my description
+nwb.electrodes.group_name # (VectorData) my description
+nwb.subject # (Subject)
+nwb.subject.age # (str) P24W
+nwb.subject.description # (str) HSD:WI rat
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Rattus norvegicus
+nwb.subject.subject_id # (str) BH506
+nwb.trials # (TimeIntervals)
+nwb.trials.description # (str) tFUS stimulation trial onset and offset
+nwb.trials.colnames # (tuple) ['start_time', 'stop_time']
+nwb.trials.columns # (tuple)
+nwb.trials.id # (ElementIdentifiers)
+# nwb.trials.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.trials.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.trials.start_time # (VectorData) start time of trial
+nwb.trials.stop_time # (VectorData) end of each trial
+nwb.units # (Units)
+nwb.units.description # (str) units table
+nwb.units.colnames # (tuple) ['spike_times', 'celltype_label']
+nwb.units.columns # (tuple)
+nwb.units.waveform_unit # (str) volts
+nwb.units.id # (ElementIdentifiers)
+# nwb.units.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 71 rows and 3 columns
+# nwb.units.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 71
+nwb.units.spike_times # (VectorIndex) Index for VectorData 'spike_times'
+# nwb.units.spike_times_index[0] # (ndarray)
+# nwb.units.spike_times_index[1] # (ndarray)
+# nwb.units.spike_times_index[2] # (ndarray)
+# nwb.units.spike_times_index[3] # (ndarray)
+# ...
+nwb.units.celltype_label # (VectorData) label 1 = RSU, label 2 = FSU
+Total prompt tokens: 43654 + 0
+Total completion tokens: 911 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py nwb-file-info 000945 https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/' (requires approval):
+Command executed successfully
+STDOUT:
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/655fe6cf-a152-412b-9d20-71c6db670629/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) Awake S1 Stimulation by tFUS
+nwb.identifier # (str) BH506_1500_200
+nwb.session_start_time # (datetime) 2023-10-18T18:16:09-04:00
+nwb.timestamps_reference_time # (datetime) 2023-10-18T18:16:09-04:00
+nwb.file_create_date # (list) [datetime.datetime(2024, 3, 29, 22, 34, 43, tzinfo=tzoffset(None, -14400)), datetime.datetime(2024, 3, 29, 22, 34, 43, 501000, tzinfo=tzoffset(None, -14400))]
+nwb.electrode_groups # (LabelledDict)
+nwb.electrode_groups["shank1"] # (ElectrodeGroup)
+nwb.electrode_groups["shank1"].description # (str) electrode group for shank1
+nwb.electrode_groups["shank1"].location # (str) brain area
+nwb.electrode_groups["shank1"].device # (Device)
+nwb.electrode_groups["shank1"].device.description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.electrode_groups["shank1"].device.manufacturer # (str) Neuronexus
+nwb.devices # (LabelledDict)
+nwb.devices["array"] # (Device)
+nwb.devices["array"].description # (str) A1x32-Poly3-10mm-50-177-Z32
+nwb.devices["array"].manufacturer # (str) Neuronexus
+nwb.intervals # (LabelledDict)
+nwb.intervals["trials"] # (TimeIntervals)
+nwb.intervals["trials"].description # (str) tFUS stimulation trial onset and offset
+nwb.intervals["trials"].colnames # (tuple) ['start_time', 'stop_time']
+nwb.intervals["trials"].columns # (tuple)
+nwb.intervals["trials"].id # (ElementIdentifiers)
+# nwb.intervals["trials"].to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.intervals["trials"].to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.intervals["trials"].start_time # (VectorData) start time of trial
+nwb.intervals["trials"].stop_time # (VectorData) end of each trial
+nwb.institution # (str) Carnegie Mellon University
+nwb.electrodes # (DynamicTable)
+nwb.electrodes.description # (str) all electrodes
+nwb.electrodes.colnames # (tuple) ['x', 'y', 'z', 'imp', 'location', 'filtering', 'group', 'group_name']
+nwb.electrodes.columns # (tuple)
+nwb.electrodes.id # (ElementIdentifiers)
+# nwb.electrodes.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 32 rows and 8 columns
+# nwb.electrodes.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 32
+nwb.electrodes.x # (VectorData) my description
+nwb.electrodes.y # (VectorData) my description
+nwb.electrodes.z # (VectorData) my description
+nwb.electrodes.imp # (VectorData) my description
+nwb.electrodes.location # (VectorData) my description
+nwb.electrodes.filtering # (VectorData) my description
+nwb.electrodes.group # (VectorData) my description
+nwb.electrodes.group_name # (VectorData) my description
+nwb.subject # (Subject)
+nwb.subject.age # (str) P24W
+nwb.subject.description # (str) HSD:WI rat
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Rattus norvegicus
+nwb.subject.subject_id # (str) BH506
+nwb.trials # (TimeIntervals)
+nwb.trials.description # (str) tFUS stimulation trial onset and offset
+nwb.trials.colnames # (tuple) ['start_time', 'stop_time']
+nwb.trials.columns # (tuple)
+nwb.trials.id # (ElementIdentifiers)
+# nwb.trials.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 500 rows and 2 columns
+# nwb.trials.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 500
+nwb.trials.start_time # (VectorData) start time of trial
+nwb.trials.stop_time # (VectorData) end of each trial
+nwb.units # (Units)
+nwb.units.description # (str) units table
+nwb.units.colnames # (tuple) ['spike_times', 'celltype_label']
+nwb.units.columns # (tuple)
+nwb.units.waveform_unit # (str) volts
+nwb.units.id # (ElementIdentifiers)
+# nwb.units.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 71 rows and 3 columns
+# nwb.units.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 71
+nwb.units.spike_times # (VectorIndex) Index for VectorData 'spike_times'
+# nwb.units.spike_times_index[0] # (ndarray)
+# nwb.units.spike_times_index[1] # (ndarray)
+# nwb.units.spike_times_index[2] # (ndarray)
+# nwb.units.spike_times_index[3] # (ndarray)
+# ...
+nwb.units.celltype_label # (VectorData) label 1 = RSU, label 2 = FSU
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-common' version 1.5.0 because version 1.8.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.5.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'hdmf-experimental' version 0.1.0 because version 0.5.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/dandi-ai-notebooks-2/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:319: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 10
+Submitting completion request...
+Processing response...
+Based on the information I've gathered from the two NWB files, I can now create the Jupytext notebook. Here's what I've learned:
+
+1. The Dandiset contains recordings of neural activity in the somatosensory cortex of awake rats during transcranial focused ultrasound stimulation.
+2. Different pulse repetition frequencies (PRFs) were tested: 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz.
+3. Each recording contains 500 trials, with ultrasound stimulation delivered every 2.5 seconds with a 10% jitter.
+4. The data includes spike times and cell type labels for neurons, as well as timing information for the ultrasound stimulation trials.
+5. The NWB files contain information about electrodes, units (neurons), and trials.
+6. Subject data includes information like age (P24W - 24 weeks postnatal), sex (male), and species (Rattus norvegicus).
+
+For my notebook, I'll focus on demonstrating how to:
+1. Load the Dandiset and explore its assets
+2. Load an NWB file and explore its structure
+3. Extract and visualize spike times for different neurons
+4. Analyze neural activity around the ultrasound stimulation trials
+5. Compare response properties across different cell types (RSU vs FSU)
+
+I'll use the URL from the first file we examined (subject BH497) for the demonstrations, and I'll make sure to construct code that handles the remote data efficiently.
+
+Tool: write_to_file
+Params: {'path': 'notebook.py', 'content': '# %% [markdown]\n# # Exploring Dandiset 000945: Neural Spiking Data in Response to Transcranial Focused Ultrasound Stimulation in Rat Somatosensory Cortex\n#\n# ## Disclaimer\n# **This notebook was AI-generated using dandi-notebook-gen and has not been fully verified. Please be cautious when interpreting the code or results.**\n#\n# ## Overview\n# This dandiset contains neural spiking data recorded from the somatosensory cortex of awake head-fixed rats during transcranial focused ultrasound (tFUS) stimulation. The researchers tested different pulse repetition frequencies (PRFs): 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz, using a 128-element random array ultrasound transducer. The recordings were made using 32-channel NeuroNexus electrodes chronically implanted in the rat brain.\n#\n# You can view this dataset on Neurosift at: https://neurosift.app/dandiset/000945/000945\n#\n# ## What this notebook will cover\n# 1. Loading the Dandiset and exploring its assets\n# 2. Loading an NWB file and examining its structure\n# 3. Analyzing spike times and cell types\n# 4. Visualizing neural responses to ultrasound stimulation\n# 5. Comparing responses across different neuron types\n#\n# ## Required Packages\n# The following packages are needed to run this notebook:\n\n# %%\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport pandas as pd\nimport h5py\nimport remfile\nimport pynwb\nfrom dandi.dandiapi import DandiAPIClient\nfrom scipy import stats\nimport warnings\n\n# Set up plotting\nsns.set_theme()\nwarnings.filterwarnings(\'ignore\')  # Suppress warnings\n\n# %% [markdown]\n# ## Loading the Dandiset\n#\n# We\'ll start by connecting to the DANDI archive and loading information about Dandiset 000945.\n\n# %%\n# Connect to DANDI archive\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("000945")\nassets = list(dandiset.get_assets())\n\nprint(f"Dandiset name: {dandiset.get_metadata()[\'name\']}")\nprint(f"Found {len(assets)} assets in the dataset")\nprint("\\nFirst 5 assets:")\nfor asset in assets[:5]:\n    print(f"- {asset.path}")\n\n# %% [markdown]\n# Let\'s examine the subjects and sessions available in this dataset by organizing the assets by subject.\n\n# %%\n# Organize assets by subject\nsubjects = {}\nfor asset in assets:\n    path = asset.path\n    subject_id = path.split(\'/\')[0]\n    \n    if subject_id not in subjects:\n        subjects[subject_id] = []\n    \n    subjects[subject_id].append(path)\n\n# Print summary\nprint(f"Number of subjects: {len(subjects)}")\nfor subject, files in subjects.items():\n    print(f"\\n{subject}: {len(files)} files")\n    # Print just the first 3 files if there are many\n    for file in files[:3]:\n        print(f"  - {file}")\n    if len(files) > 3:\n        print(f"  - ... and {len(files) - 3} more files")\n\n# %% [markdown]\n# ## Loading an NWB file\n#\n# Now, let\'s load one of the NWB files to examine its structure. We\'ll use the file from subject BH497 with a 3000 Hz pulse repetition frequency.\n\n# %%\n# Select a specific NWB file to analyze\nasset_id = "a4e04662-e4cb-49f3-9076-41e04e833a11"\nfile_path = "sub-BH497/sub-BH497_ses-20240310T143729_ecephys.nwb"\nurl = f"https://api.dandiarchive.org/api/assets/{asset_id}/download/"\n\nprint(f"Loading NWB file: {file_path}")\nprint(f"URL: {url}")\n\n# Load the file\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# %% [markdown]\n# Let\'s examine the basic metadata of this file:\n\n# %%\n# Print basic metadata\nprint(f"File identifier: {nwb.identifier}")\nprint(f"Session description: {nwb.session_description}")\nprint(f"Session start time: {nwb.session_start_time}")\nprint(f"Institution: {nwb.institution}")\n\n# Subject information\nprint("\\nSubject information:")\nprint(f"  ID: {nwb.subject.subject_id}")\nprint(f"  Age: {nwb.subject.age}")\nprint(f"  Sex: {nwb.subject.sex}")\nprint(f"  Species: {nwb.subject.species}")\nprint(f"  Description: {nwb.subject.description}")\n\n# %% [markdown]\n# Now let\'s look at the electrode and device information:\n\n# %%\n# Print electrode and device information\nprint("Device information:")\nfor device_name, device in nwb.devices.items():\n    print(f"  {device_name}: {device.description} (Manufacturer: {device.manufacturer})")\n\nprint("\\nElectrode group information:")\nfor group_name, group in nwb.electrode_groups.items():\n    print(f"  {group_name}: {group.description}, Location: {group.location}")\n\n# %% [markdown]\n# ## Examining the electrodes data\n\n# %%\n# Convert electrodes to a DataFrame for easier viewing\nelectrodes_df = nwb.electrodes.to_dataframe()\nprint(f"Number of electrodes: {len(electrodes_df)}")\nprint("\\nFirst 5 electrodes:")\nelectrodes_df.head()\n\n# %% [markdown]\n# ## Examining the trial data\n#\n# The dataset contains multiple trials of ultrasound stimulation. Let\'s examine the trial structure.\n\n# %%\n# Convert trials to a DataFrame\ntrials_df = nwb.trials.to_dataframe()\nprint(f"Number of trials: {len(trials_df)}")\nprint("\\nFirst 5 trials:")\ntrials_df.head()\n\n# %%\n# Calculate trial durations and inter-trial intervals\ntrials_df[\'duration\'] = trials_df[\'stop_time\'] - trials_df[\'start_time\']\ntrials_df[\'inter_trial_interval\'] = trials_df[\'start_time\'].shift(-1) - trials_df[\'stop_time\']\n\n# Plot trial durations\nplt.figure(figsize=(12, 5))\nplt.subplot(1, 2, 1)\nplt.hist(trials_df[\'duration\'], bins=20)\nplt.title(\'Trial Duration Distribution\')\nplt.xlabel(\'Duration (s)\')\nplt.ylabel(\'Count\')\n\nplt.subplot(1, 2, 2)\nplt.hist(trials_df[\'inter_trial_interval\'].dropna(), bins=20)\nplt.title(\'Inter-Trial Interval Distribution\')\nplt.xlabel(\'Interval (s)\')\nplt.ylabel(\'Count\')\n\nplt.tight_layout()\nplt.show()\n\n# %% [markdown]\n# ## Examining the units (neurons) data\n#\n# Now let\'s look at the neural units recorded in this dataset. The dataset includes spike times for each unit, as well as a cell type label.\n\n# %%\n# Convert units to a DataFrame\nunits_df = nwb.units.to_dataframe()\nprint(f"Number of units: {len(units_df)}")\nprint("\\nColumns in the units table:")\nfor col in units_df.columns:\n    print(f"- {col}")\n\n# %%\n# Map cell type labels to their descriptions\ncell_type_map = {1: \'RSU (Regular Spiking Unit)\', 2: \'FSU (Fast Spiking Unit)\'}\nunits_df[\'cell_type\'] = units_df[\'celltype_label\'].map(cell_type_map)\n\n# Count units of each cell type\ncell_type_counts = units_df[\'cell_type\'].value_counts()\nprint("Cell type distribution:")\nfor cell_type, count in cell_type_counts.items():\n    print(f"- {cell_type}: {count} units")\n\n# %% [markdown]\n# Let\'s examine the spike times for a few example neurons to understand their activity patterns:\n\n# %%\n# Function to get spike times for a given unit\ndef get_unit_spike_times(unit_id):\n    return nwb.units[\'spike_times\'][unit_id]\n\n# Select a few example units to examine\nexample_unit_ids = [0, 1, 2]  # First three units\nfor unit_id in example_unit_ids:\n    spike_times = get_unit_spike_times(unit_id)\n    cell_type = units_df.loc[unit_id, \'cell_type\']\n    \n    print(f"Unit {unit_id} ({cell_type}):")\n    print(f"  Total spikes: {len(spike_times)}")\n    print(f"  Time range: {spike_times[0]:.2f}s to {spike_times[-1]:.2f}s")\n    print(f"  Mean firing rate: {len(spike_times) / (spike_times[-1] - spike_times[0]):.2f} Hz")\n    print("")\n\n# %% [markdown]\n# ## Visualizing spike activity around ultrasound stimulation\n#\n# Now let\'s examine how the neurons respond to ultrasound stimulation. We\'ll create raster plots and peri-stimulus time histograms (PSTHs) for selected units.\n\n# %%\ndef create_raster_and_psth(unit_id, window=(-0.5, 1.5), bin_size=0.01):\n    """\n    Create a raster plot and PSTH for a specific unit around stimulus onset.\n    \n    Parameters:\n    -----------\n    unit_id : int\n        The ID of the unit to analyze\n    window : tuple\n        Time window around stimulus onset (in seconds)\n    bin_size : float\n        Bin size for the PSTH (in seconds)\n    """\n    unit_spikes = get_unit_spike_times(unit_id)\n    cell_type = units_df.loc[unit_id, \'cell_type\']\n    \n    # Get trial start times\n    trial_starts = trials_df[\'start_time\'].values\n    \n    # Initialize plot\n    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True, \n                                   gridspec_kw={\'height_ratios\': [3, 1]})\n    \n    # Collect all spikes relative to trial starts for PSTH\n    all_relative_spikes = []\n    \n    # Create raster plot\n    for i, trial_start in enumerate(trial_starts):\n        # Find spikes within the window for this trial\n        mask = ((unit_spikes >= trial_start + window[0]) & \n                (unit_spikes <= trial_start + window[1]))\n        trial_spikes = unit_spikes[mask] - trial_start\n        \n        all_relative_spikes.extend(trial_spikes)\n        \n        # Plot raster dots\n        ax1.plot(trial_spikes, np.ones_like(trial_spikes) * i, \'|\', color=\'black\', markersize=4)\n    \n    ax1.set_ylabel(\'Trial #\')\n    ax1.set_title(f\'Unit {unit_id} ({cell_type}) - Raster Plot\')\n    \n    # Create PSTH\n    bin_edges = np.arange(window[0], window[1] + bin_size, bin_size)\n    hist, bins = np.histogram(all_relative_spikes, bins=bin_edges)\n    \n    # Convert spike counts to firing rate (spikes/s)\n    hist = hist / (bin_size * len(trial_starts))\n    \n    # Plot PSTH\n    ax2.bar(bins[:-1], hist, width=bin_size, color=\'blue\', alpha=0.7)\n    ax2.set_xlabel(\'Time from stimulus onset (s)\')\n    ax2.set_ylabel(\'Firing rate (Hz)\')\n    ax2.set_title(\'Peri-Stimulus Time Histogram (PSTH)\')\n    \n    # Add vertical line at stimulus onset\n    ax1.axvline(x=0, color=\'red\', linestyle=\'--\', alpha=0.8)\n    ax2.axvline(x=0, color=\'red\', linestyle=\'--\', alpha=0.8)\n    \n    # Find stimulus offset based on median trial duration\n    stim_offset = trials_df[\'duration\'].median()\n    ax1.axvline(x=stim_offset, color=\'blue\', linestyle=\'--\', alpha=0.6)\n    ax2.axvline(x=stim_offset, color=\'blue\', linestyle=\'--\', alpha=0.6)\n    \n    plt.tight_layout()\n    return fig\n\n# %% [markdown]\n# Let\'s analyze a few example units to see how they respond to the ultrasound stimulation:\n\n# %%\n# Find units with a good number of spikes for analysis\nunit_spike_counts = {i: len(get_unit_spike_times(i)) for i in range(5)}\nsorted_units = sorted(unit_spike_counts.items(), key=lambda x: x[1], reverse=True)\nprint("Units with the most spikes:")\nfor unit_id, count in sorted_units:\n    cell_type = units_df.loc[unit_id, \'cell_type\']\n    print(f"Unit {unit_id} ({cell_type}): {count} spikes")\n\n# %%\n# Create raster and PSTH for a selected unit\ncreate_raster_and_psth(0)\n\n# %%\n# Compare with another unit\ncreate_raster_and_psth(1)\n\n# %% [markdown]\n# ## Comparing responses across cell types\n#\n# Now let\'s compare how the different cell types (RSU vs FSU) respond to the ultrasound stimulation.\n\n# %%\ndef calculate_response_metrics(unit_id, pre_window=(-0.5, 0), post_window=(0, 0.5)):\n    """\n    Calculate response metrics for a unit.\n    \n    Parameters:\n    -----------\n    unit_id : int\n        The ID of the unit to analyze\n    pre_window : tuple\n        Time window before stimulus (in seconds)\n    post_window : tuple\n        Time window after stimulus (in seconds)\n    \n    Returns:\n    --------\n    dict : \n        Dictionary of response metrics\n    """\n    unit_spikes = get_unit_spike_times(unit_id)\n    trial_starts = trials_df[\'start_time\'].values\n    \n    pre_rates = []\n    post_rates = []\n    \n    # Calculate firing rates before and after each trial\n    for trial_start in trial_starts:\n        # Pre-stimulus window\n        pre_mask = ((unit_spikes >= trial_start + pre_window[0]) & \n                   (unit_spikes <= trial_start + pre_window[1]))\n        pre_spikes = unit_spikes[pre_mask]\n        pre_rate = len(pre_spikes) / (pre_window[1] - pre_window[0])\n        pre_rates.append(pre_rate)\n        \n        # Post-stimulus window\n        post_mask = ((unit_spikes >= trial_start + post_window[0]) & \n                    (unit_spikes <= trial_start + post_window[1]))\n        post_spikes = unit_spikes[post_mask]\n        post_rate = len(post_spikes) / (post_window[1] - post_window[0])\n        post_rates.append(post_rate)\n    \n    # Calculate mean firing rates\n    mean_pre_rate = np.mean(pre_rates)\n    mean_post_rate = np.mean(post_rates)\n    \n    # Calculate response modulation\n    modulation = (mean_post_rate - mean_pre_rate) / (mean_post_rate + mean_pre_rate + 1e-10)\n    \n    # Statistical significance (paired t-test)\n    t_stat, p_value = stats.ttest_rel(post_rates, pre_rates)\n    \n    return {\n        \'unit_id\': unit_id,\n        \'mean_pre_rate\': mean_pre_rate,\n        \'mean_post_rate\': mean_post_rate,\n        \'modulation\': modulation,\n        \'p_value\': p_value,\n        \'t_stat\': t_stat,\n        \'significant\': p_value < 0.05\n    }\n\n# %%\n# Calculate response metrics for all units\nresponse_metrics = []\nfor unit_id in range(len(units_df)):\n    metrics = calculate_response_metrics(unit_id)\n    metrics[\'cell_type\'] = units_df.loc[unit_id, \'cell_type\']\n    response_metrics.append(metrics)\n\n# Convert to DataFrame\nresponse_df = pd.DataFrame(response_metrics)\nresponse_df[\'response_type\'] = np.where(response_df[\'modulation\'] > 0, \'Enhanced\', \'Suppressed\')\nresponse_df[\'response_type\'] = np.where(response_df[\'significant\'], response_df[\'response_type\'], \'No Response\')\n\n# %% [markdown]\n# Let\'s analyze the distribution of response types across cell types:\n\n# %%\n# Count units by response type and cell type\nresponse_counts = pd.crosstab(response_df[\'cell_type\'], response_df[\'response_type\'])\nresponse_percentages = response_counts.div(response_counts.sum(axis=1), axis=0) * 100\n\n# Plot as a stacked bar chart\nax = response_percentages.plot(kind=\'bar\', stacked=True, figsize=(10, 6), \n                              color=[\'lightgrey\', \'lightgreen\', \'salmon\'])\nplt.title(\'Response Types by Cell Type\')\nplt.xlabel(\'Cell Type\')\nplt.ylabel(\'Percentage of Units\')\nplt.legend(title=\'Response Type\')\nplt.xticks(rotation=0)\n\n# Add count labels\nfor i, cell_type in enumerate(response_percentages.index):\n    total = response_counts.loc[cell_type].sum()\n    plt.text(i, 105, f"n = {total}", ha=\'center\')\n\nplt.ylim(0, 110)\nplt.tight_layout()\nplt.show()\n\n# %%\n# Compare modulation index between cell types\nplt.figure(figsize=(10, 6))\nsns.boxplot(x=\'cell_type\', y=\'modulation\', data=response_df, palette=\'Set2\')\nsns.swarmplot(x=\'cell_type\', y=\'modulation\', data=response_df, color=\'black\', alpha=0.7)\n\nplt.axhline(y=0, color=\'grey\', linestyle=\'--\')\nplt.title(\'Modulation Index by Cell Type\')\nplt.xlabel(\'Cell Type\')\nplt.ylabel(\'Modulation Index\\n(Post - Pre) / (Post + Pre)\')\n\n# Add statistical test\nrsu_data = response_df[response_df[\'cell_type\'] == \'RSU (Regular Spiking Unit)\'][\'modulation\']\nfsu_data = response_df[response_df[\'cell_type\'] == \'FSU (Fast Spiking Unit)\'][\'modulation\']\nt_stat, p_val = stats.ttest_ind(rsu_data, fsu_data)\nplt.text(0.5, response_df[\'modulation\'].max() * 0.9, \n         f"t-test: p = {p_val:.3f}", \n         ha=\'center\')\n\nplt.tight_layout()\nplt.show()\n\n# %% [markdown]\n# ## Advanced visualization: Trial-to-trial variability in neural responses\n#\n# Let\'s examine how neural responses vary from trial to trial by creating a heatmap of firing rates across trials.\n\n# %%\ndef create_trial_heatmap(unit_id, window=(-0.5, 1.5), bin_size=0.05):\n    """\n    Create a heatmap of firing rates across trials for a specific unit.\n    \n    Parameters:\n    -----------\n    unit_id : int\n        The ID of the unit to analyze\n    window : tuple\n        Time window around stimulus onset (in seconds)\n    bin_size : float\n        Bin size for the firing rate calculation (in seconds)\n    """\n    unit_spikes = get_unit_spike_times(unit_id)\n    cell_type = units_df.loc[unit_id, \'cell_type\']\n    \n    # Get trial start times\n    trial_starts = trials_df[\'start_time\'].values\n    \n    # Create time bins\n    time_bins = np.arange(window[0], window[1] + bin_size, bin_size)\n    bin_centers = time_bins[:-1] + bin_size/2\n    \n    # Initialize matrix for firing rates (trials x time bins)\n    firing_rates = np.zeros((len(trial_starts), len(time_bins) - 1))\n    \n    # Calculate firing rates for each trial and time bin\n    for i, trial_start in enumerate(trial_starts):\n        for j in range(len(time_bins) - 1):\n            bin_start = trial_start + time_bins[j]\n            bin_end = trial_start + time_bins[j + 1]\n            \n            # Count spikes in this bin\n            mask = (unit_spikes >= bin_start) & (unit_spikes < bin_end)\n            spike_count = np.sum(mask)\n            \n            # Convert to firing rate (Hz)\n            firing_rates[i, j] = spike_count / bin_size\n    \n    # Create figure\n    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8), gridspec_kw={\'width_ratios\': [4, 1]})\n    \n    # Plot heatmap\n    im = ax1.imshow(firing_rates, aspect=\'auto\', cmap=\'viridis\', \n                   extent=[window[0], window[1], len(trial_starts), 0])\n    \n    ax1.set_xlabel(\'Time from stimulus onset (s)\')\n    ax1.set_ylabel(\'Trial #\')\n    ax1.set_title(f\'Unit {unit_id} ({cell_type}) - Trial-by-Trial Firing Rate\')\n    \n    # Add vertical line at stimulus onset\n    ax1.axvline(x=0, color=\'red\', linestyle=\'--\', alpha=0.8)\n    \n    # Find stimulus offset based on median trial duration\n    stim_offset = trials_df[\'duration\'].median()\n    ax1.axvline(x=stim_offset, color=\'blue\', linestyle=\'--\', alpha=0.6)\n    \n    # Add colorbar\n    cbar = plt.colorbar(im, ax=ax1)\n    cbar.set_label(\'Firing Rate (Hz)\')\n    \n    # Calculate mean firing rate across trials for each time bin\n    mean_firing_rate = np.mean(firing_rates, axis=0)\n    sem_firing_rate = stats.sem(firing_rates, axis=0)\n    \n    # Plot mean firing rate\n    ax2.plot(mean_firing_rate, bin_centers, color=\'black\')\n    ax2.fill_betweenx(bin_centers, \n                     mean_firing_rate - sem_firing_rate,\n                     mean_firing_rate + sem_firing_rate,\n                     color=\'gray\', alpha=0.3)\n    \n    ax2.set_xlabel(\'Mean Firing Rate (Hz)\')\n    ax2.set_yticks([])\n    ax2.set_title(\'Mean Response\')\n    \n    # Add horizontal lines at stimulus onset and offset\n    ax2.axhline(y=0, color=\'red\', linestyle=\'--\', alpha=0.8)\n    ax2.axhline(y=stim_offset, color=\'blue\', linestyle=\'--\', alpha=0.6)\n    \n    plt.tight_layout()\n    return fig\n\n# %%\n# Create trial heatmap for an interesting unit\n# Choose a unit with a strong response\nresponsive_units = response_df[response_df[\'significant\']].sort_values(by=\'t_stat\', ascending=False)\nif len(responsive_units) > 0:\n    top_unit_id = responsive_units.iloc[0][\'unit_id\']\n    print(f"Creating heatmap for unit {int(top_unit_id)}, the most responsive unit")\n    create_trial_heatmap(int(top_unit_id))\nelse:\n    # If no significant units, use the first unit\n    print("No significantly responsive units found, using unit 0 instead")\n    create_trial_heatmap(0)\n\n# %% [markdown]\n# ## Summary and Future Directions\n#\n# In this notebook, we\'ve explored Dandiset 000945, which contains neural spiking data from rat somatosensory cortex during transcranial focused ultrasound stimulation.\n#\n# We\'ve shown how to:\n# 1. Load the Dandiset and explore its assets\n# 2. Load an NWB file and examine its structure\n# 3. Extract and visualize spike times for different neurons\n# 4. Create raster plots and PSTHs to analyze neuron responses to ultrasound stimulation\n# 5. Compare responses between different cell types (RSU vs FSU)\n# 6. Visualize trial-to-trial variability in neural responses\n#\n# Future analyses could include:\n# - Comparing responses across different ultrasound pulse repetition frequencies\n# - Analyzing response latency and duration\n# - Investigating population-level responses and correlations between neurons\n# - Examining how responses change over time during the experiment\n# - Comparing awake vs anesthetized responses\n#\n# This dataset provides valuable information about how focused ultrasound stimulation affects neural activity in the somatosensory cortex, which could have implications for non-invasive neuromodulation techniques.'}
+================================
+Content to be written to notebook.py:
+# %% [markdown]
+# # Exploring Dandiset 000945: Neural Spiking Data in Response to Transcranial Focused Ultrasound Stimulation in Rat Somatosensory Cortex
+#
+# ## Disclaimer
+# **This notebook was AI-generated using dandi-notebook-gen and has not been fully verified. Please be cautious when interpreting the code or results.**
+#
+# ## Overview
+# This dandiset contains neural spiking data recorded from the somatosensory cortex of awake head-fixed rats during transcranial focused ultrasound (tFUS) stimulation. The researchers tested different pulse repetition frequencies (PRFs): 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz, using a 128-element random array ultrasound transducer. The recordings were made using 32-channel NeuroNexus electrodes chronically implanted in the rat brain.
+#
+# You can view this dataset on Neurosift at: https://neurosift.app/dandiset/000945/000945
+#
+# ## What this notebook will cover
+# 1. Loading the Dandiset and exploring its assets
+# 2. Loading an NWB file and examining its structure
+# 3. Analyzing spike times and cell types
+# 4. Visualizing neural responses to ultrasound stimulation
+# 5. Comparing responses across different neuron types
+#
+# ## Required Packages
+# The following packages are needed to run this notebook:
+
+# %%
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import h5py
+import remfile
+import pynwb
+from dandi.dandiapi import DandiAPIClient
+from scipy import stats
+import warnings
+
+# Set up plotting
+sns.set_theme()
+warnings.filterwarnings('ignore')  # Suppress warnings
+
+# %% [markdown]
+# ## Loading the Dandiset
+#
+# We'll start by connecting to the DANDI archive and loading information about Dandiset 000945.
+
+# %%
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("000945")
+assets = list(dandiset.get_assets())
+
+print(f"Dandiset name: {dandiset.get_metadata()['name']}")
+print(f"Found {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+
+# %% [markdown]
+# Let's examine the subjects and sessions available in this dataset by organizing the assets by subject.
+
+# %%
+# Organize assets by subject
+subjects = {}
+for asset in assets:
+    path = asset.path
+    subject_id = path.split('/')[0]
+    
+    if subject_id not in subjects:
+        subjects[subject_id] = []
+    
+    subjects[subject_id].append(path)
+
+# Print summary
+print(f"Number of subjects: {len(subjects)}")
+for subject, files in subjects.items():
+    print(f"\n{subject}: {len(files)} files")
+    # Print just the first 3 files if there are many
+    for file in files[:3]:
+        print(f"  - {file}")
+    if len(files) > 3:
+        print(f"  - ... and {len(files) - 3} more files")
+
+# %% [markdown]
+# ## Loading an NWB file
+#
+# Now, let's load one of the NWB files to examine its structure. We'll use the file from subject BH497 with a 3000 Hz pulse repetition frequency.
+
+# %%
+# Select a specific NWB file to analyze
+asset_id = "a4e04662-e4cb-49f3-9076-41e04e833a11"
+file_path = "sub-BH497/sub-BH497_ses-20240310T143729_ecephys.nwb"
+url = f"https://api.dandiarchive.org/api/assets/{asset_id}/download/"
+
+print(f"Loading NWB file: {file_path}")
+print(f"URL: {url}")
+
+# Load the file
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# %% [markdown]
+# Let's examine the basic metadata of this file:
+
+# %%
+# Print basic metadata
+print(f"File identifier: {nwb.identifier}")
+print(f"Session description: {nwb.session_description}")
+print(f"Session start time: {nwb.session_start_time}")
+print(f"Institution: {nwb.institution}")
+
+# Subject information
+print("\nSubject information:")
+print(f"  ID: {nwb.subject.subject_id}")
+print(f"  Age: {nwb.subject.age}")
+print(f"  Sex: {nwb.subject.sex}")
+print(f"  Species: {nwb.subject.species}")
+print(f"  Description: {nwb.subject.description}")
+
+# %% [markdown]
+# Now let's look at the electrode and device information:
+
+# %%
+# Print electrode and device information
+print("Device information:")
+for device_name, device in nwb.devices.items():
+    print(f"  {device_name}: {device.description} (Manufacturer: {device.manufacturer})")
+
+print("\nElectrode group information:")
+for group_name, group in nwb.electrode_groups.items():
+    print(f"  {group_name}: {group.description}, Location: {group.location}")
+
+# %% [markdown]
+# ## Examining the electrodes data
+
+# %%
+# Convert electrodes to a DataFrame for easier viewing
+electrodes_df = nwb.electrodes.to_dataframe()
+print(f"Number of electrodes: {len(electrodes_df)}")
+print("\nFirst 5 electrodes:")
+electrodes_df.head()
+
+# %% [markdown]
+# ## Examining the trial data
+#
+# The dataset contains multiple trials of ultrasound stimulation. Let's examine the trial structure.
+
+# %%
+# Convert trials to a DataFrame
+trials_df = nwb.trials.to_dataframe()
+print(f"Number of trials: {len(trials_df)}")
+print("\nFirst 5 trials:")
+trials_df.head()
+
+# %%
+# Calculate trial durations and inter-trial intervals
+trials_df['duration'] = trials_df['stop_time'] - trials_df['start_time']
+trials_df['inter_trial_interval'] = trials_df['start_time'].shift(-1) - trials_df['stop_time']
+
+# Plot trial durations
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+plt.hist(trials_df['duration'], bins=20)
+plt.title('Trial Duration Distribution')
+plt.xlabel('Duration (s)')
+plt.ylabel('Count')
+
+plt.subplot(1, 2, 2)
+plt.hist(trials_df['inter_trial_interval'].dropna(), bins=20)
+plt.title('Inter-Trial Interval Distribution')
+plt.xlabel('Interval (s)')
+plt.ylabel('Count')
+
+plt.tight_layout()
+plt.show()
+
+# %% [markdown]
+# ## Examining the units (neurons) data
+#
+# Now let's look at the neural units recorded in this dataset. The dataset includes spike times for each unit, as well as a cell type label.
+
+# %%
+# Convert units to a DataFrame
+units_df = nwb.units.to_dataframe()
+print(f"Number of units: {len(units_df)}")
+print("\nColumns in the units table:")
+for col in units_df.columns:
+    print(f"- {col}")
+
+# %%
+# Map cell type labels to their descriptions
+cell_type_map = {1: 'RSU (Regular Spiking Unit)', 2: 'FSU (Fast Spiking Unit)'}
+units_df['cell_type'] = units_df['celltype_label'].map(cell_type_map)
+
+# Count units of each cell type
+cell_type_counts = units_df['cell_type'].value_counts()
+print("Cell type distribution:")
+for cell_type, count in cell_type_counts.items():
+    print(f"- {cell_type}: {count} units")
+
+# %% [markdown]
+# Let's examine the spike times for a few example neurons to understand their activity patterns:
+
+# %%
+# Function to get spike times for a given unit
+def get_unit_spike_times(unit_id):
+    return nwb.units['spike_times'][unit_id]
+
+# Select a few example units to examine
+example_unit_ids = [0, 1, 2]  # First three units
+for unit_id in example_unit_ids:
+    spike_times = get_unit_spike_times(unit_id)
+    cell_type = units_df.loc[unit_id, 'cell_type']
+    
+    print(f"Unit {unit_id} ({cell_type}):")
+    print(f"  Total spikes: {len(spike_times)}")
+    print(f"  Time range: {spike_times[0]:.2f}s to {spike_times[-1]:.2f}s")
+    print(f"  Mean firing rate: {len(spike_times) / (spike_times[-1] - spike_times[0]):.2f} Hz")
+    print("")
+
+# %% [markdown]
+# ## Visualizing spike activity around ultrasound stimulation
+#
+# Now let's examine how the neurons respond to ultrasound stimulation. We'll create raster plots and peri-stimulus time histograms (PSTHs) for selected units.
+
+# %%
+def create_raster_and_psth(unit_id, window=(-0.5, 1.5), bin_size=0.01):
+    """
+    Create a raster plot and PSTH for a specific unit around stimulus onset.
+    
+    Parameters:
+    -----------
+    unit_id : int
+        The ID of the unit to analyze
+    window : tuple
+        Time window around stimulus onset (in seconds)
+    bin_size : float
+        Bin size for the PSTH (in seconds)
+    """
+    unit_spikes = get_unit_spike_times(unit_id)
+    cell_type = units_df.loc[unit_id, 'cell_type']
+    
+    # Get trial start times
+    trial_starts = trials_df['start_time'].values
+    
+    # Initialize plot
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8), sharex=True, 
+                                   gridspec_kw={'height_ratios': [3, 1]})
+    
+    # Collect all spikes relative to trial starts for PSTH
+    all_relative_spikes = []
+    
+    # Create raster plot
+    for i, trial_start in enumerate(trial_starts):
+        # Find spikes within the window for this trial
+        mask = ((unit_spikes >= trial_start + window[0]) & 
+                (unit_spikes <= trial_start + window[1]))
+        trial_spikes = unit_spikes[mask] - trial_start
+        
+        all_relative_spikes.extend(trial_spikes)
+        
+        # Plot raster dots
+        ax1.plot(trial_spikes, np.ones_like(trial_spikes) * i, '|', color='black', markersize=4)
+    
+    ax1.set_ylabel('Trial #')
+    ax1.set_title(f'Unit {unit_id} ({cell_type}) - Raster Plot')
+    
+    # Create PSTH
+    bin_edges = np.arange(window[0], window[1] + bin_size, bin_size)
+    hist, bins = np.histogram(all_relative_spikes, bins=bin_edges)
+    
+    # Convert spike counts to firing rate (spikes/s)
+    hist = hist / (bin_size * len(trial_starts))
+    
+    # Plot PSTH
+    ax2.bar(bins[:-1], hist, width=bin_size, color='blue', alpha=0.7)
+    ax2.set_xlabel('Time from stimulus onset (s)')
+    ax2.set_ylabel('Firing rate (Hz)')
+    ax2.set_title('Peri-Stimulus Time Histogram (PSTH)')
+    
+    # Add vertical line at stimulus onset
+    ax1.axvline(x=0, color='red', linestyle='--', alpha=0.8)
+    ax2.axvline(x=0, color='red', linestyle='--', alpha=0.8)
+    
+    # Find stimulus offset based on median trial duration
+    stim_offset = trials_df['duration'].median()
+    ax1.axvline(x=stim_offset, color='blue', linestyle='--', alpha=0.6)
+    ax2.axvline(x=stim_offset, color='blue', linestyle='--', alpha=0.6)
+    
+    plt.tight_layout()
+    return fig
+
+# %% [markdown]
+# Let's analyze a few example units to see how they respond to the ultrasound stimulation:
+
+# %%
+# Find units with a good number of spikes for analysis
+unit_spike_counts = {i: len(get_unit_spike_times(i)) for i in range(5)}
+sorted_units = sorted(unit_spike_counts.items(), key=lambda x: x[1], reverse=True)
+print("Units with the most spikes:")
+for unit_id, count in sorted_units:
+    cell_type = units_df.loc[unit_id, 'cell_type']
+    print(f"Unit {unit_id} ({cell_type}): {count} spikes")
+
+# %%
+# Create raster and PSTH for a selected unit
+create_raster_and_psth(0)
+
+# %%
+# Compare with another unit
+create_raster_and_psth(1)
+
+# %% [markdown]
+# ## Comparing responses across cell types
+#
+# Now let's compare how the different cell types (RSU vs FSU) respond to the ultrasound stimulation.
+
+# %%
+def calculate_response_metrics(unit_id, pre_window=(-0.5, 0), post_window=(0, 0.5)):
+    """
+    Calculate response metrics for a unit.
+    
+    Parameters:
+    -----------
+    unit_id : int
+        The ID of the unit to analyze
+    pre_window : tuple
+        Time window before stimulus (in seconds)
+    post_window : tuple
+        Time window after stimulus (in seconds)
+    
+    Returns:
+    --------
+    dict : 
+        Dictionary of response metrics
+    """
+    unit_spikes = get_unit_spike_times(unit_id)
+    trial_starts = trials_df['start_time'].values
+    
+    pre_rates = []
+    post_rates = []
+    
+    # Calculate firing rates before and after each trial
+    for trial_start in trial_starts:
+        # Pre-stimulus window
+        pre_mask = ((unit_spikes >= trial_start + pre_window[0]) & 
+                   (unit_spikes <= trial_start + pre_window[1]))
+        pre_spikes = unit_spikes[pre_mask]
+        pre_rate = len(pre_spikes) / (pre_window[1] - pre_window[0])
+        pre_rates.append(pre_rate)
+        
+        # Post-stimulus window
+        post_mask = ((unit_spikes >= trial_start + post_window[0]) & 
+                    (unit_spikes <= trial_start + post_window[1]))
+        post_spikes = unit_spikes[post_mask]
+        post_rate = len(post_spikes) / (post_window[1] - post_window[0])
+        post_rates.append(post_rate)
+    
+    # Calculate mean firing rates
+    mean_pre_rate = np.mean(pre_rates)
+    mean_post_rate = np.mean(post_rates)
+    
+    # Calculate response modulation
+    modulation = (mean_post_rate - mean_pre_rate) / (mean_post_rate + mean_pre_rate + 1e-10)
+    
+    # Statistical significance (paired t-test)
+    t_stat, p_value = stats.ttest_rel(post_rates, pre_rates)
+    
+    return {
+        'unit_id': unit_id,
+        'mean_pre_rate': mean_pre_rate,
+        'mean_post_rate': mean_post_rate,
+        'modulation': modulation,
+        'p_value': p_value,
+        't_stat': t_stat,
+        'significant': p_value < 0.05
+    }
+
+# %%
+# Calculate response metrics for all units
+response_metrics = []
+for unit_id in range(len(units_df)):
+    metrics = calculate_response_metrics(unit_id)
+    metrics['cell_type'] = units_df.loc[unit_id, 'cell_type']
+    response_metrics.append(metrics)
+
+# Convert to DataFrame
+response_df = pd.DataFrame(response_metrics)
+response_df['response_type'] = np.where(response_df['modulation'] > 0, 'Enhanced', 'Suppressed')
+response_df['response_type'] = np.where(response_df['significant'], response_df['response_type'], 'No Response')
+
+# %% [markdown]
+# Let's analyze the distribution of response types across cell types:
+
+# %%
+# Count units by response type and cell type
+response_counts = pd.crosstab(response_df['cell_type'], response_df['response_type'])
+response_percentages = response_counts.div(response_counts.sum(axis=1), axis=0) * 100
+
+# Plot as a stacked bar chart
+ax = response_percentages.plot(kind='bar', stacked=True, figsize=(10, 6), 
+                              color=['lightgrey', 'lightgreen', 'salmon'])
+plt.title('Response Types by Cell Type')
+plt.xlabel('Cell Type')
+plt.ylabel('Percentage of Units')
+plt.legend(title='Response Type')
+plt.xticks(rotation=0)
+
+# Add count labels
+for i, cell_type in enumerate(response_percentages.index):
+    total = response_counts.loc[cell_type].sum()
+    plt.text(i, 105, f"n = {total}", ha='center')
+
+plt.ylim(0, 110)
+plt.tight_layout()
+plt.show()
+
+# %%
+# Compare modulation index between cell types
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='cell_type', y='modulation', data=response_df, palette='Set2')
+sns.swarmplot(x='cell_type', y='modulation', data=response_df, color='black', alpha=0.7)
+
+plt.axhline(y=0, color='grey', linestyle='--')
+plt.title('Modulation Index by Cell Type')
+plt.xlabel('Cell Type')
+plt.ylabel('Modulation Index\n(Post - Pre) / (Post + Pre)')
+
+# Add statistical test
+rsu_data = response_df[response_df['cell_type'] == 'RSU (Regular Spiking Unit)']['modulation']
+fsu_data = response_df[response_df['cell_type'] == 'FSU (Fast Spiking Unit)']['modulation']
+t_stat, p_val = stats.ttest_ind(rsu_data, fsu_data)
+plt.text(0.5, response_df['modulation'].max() * 0.9, 
+         f"t-test: p = {p_val:.3f}", 
+         ha='center')
+
+plt.tight_layout()
+plt.show()
+
+# %% [markdown]
+# ## Advanced visualization: Trial-to-trial variability in neural responses
+#
+# Let's examine how neural responses vary from trial to trial by creating a heatmap of firing rates across trials.
+
+# %%
+def create_trial_heatmap(unit_id, window=(-0.5, 1.5), bin_size=0.05):
+    """
+    Create a heatmap of firing rates across trials for a specific unit.
+    
+    Parameters:
+    -----------
+    unit_id : int
+        The ID of the unit to analyze
+    window : tuple
+        Time window around stimulus onset (in seconds)
+    bin_size : float
+        Bin size for the firing rate calculation (in seconds)
+    """
+    unit_spikes = get_unit_spike_times(unit_id)
+    cell_type = units_df.loc[unit_id, 'cell_type']
+    
+    # Get trial start times
+    trial_starts = trials_df['start_time'].values
+    
+    # Create time bins
+    time_bins = np.arange(window[0], window[1] + bin_size, bin_size)
+    bin_centers = time_bins[:-1] + bin_size/2
+    
+    # Initialize matrix for firing rates (trials x time bins)
+    firing_rates = np.zeros((len(trial_starts), len(time_bins) - 1))
+    
+    # Calculate firing rates for each trial and time bin
+    for i, trial_start in enumerate(trial_starts):
+        for j in range(len(time_bins) - 1):
+            bin_start = trial_start + time_bins[j]
+            bin_end = trial_start + time_bins[j + 1]
+            
+            # Count spikes in this bin
+            mask = (unit_spikes >= bin_start) & (unit_spikes < bin_end)
+            spike_count = np.sum(mask)
+            
+            # Convert to firing rate (Hz)
+            firing_rates[i, j] = spike_count / bin_size
+    
+    # Create figure
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8), gridspec_kw={'width_ratios': [4, 1]})
+    
+    # Plot heatmap
+    im = ax1.imshow(firing_rates, aspect='auto', cmap='viridis', 
+                   extent=[window[0], window[1], len(trial_starts), 0])
+    
+    ax1.set_xlabel('Time from stimulus onset (s)')
+    ax1.set_ylabel('Trial #')
+    ax1.set_title(f'Unit {unit_id} ({cell_type}) - Trial-by-Trial Firing Rate')
+    
+    # Add vertical line at stimulus onset
+    ax1.axvline(x=0, color='red', linestyle='--', alpha=0.8)
+    
+    # Find stimulus offset based on median trial duration
+    stim_offset = trials_df['duration'].median()
+    ax1.axvline(x=stim_offset, color='blue', linestyle='--', alpha=0.6)
+    
+    # Add colorbar
+    cbar = plt.colorbar(im, ax=ax1)
+    cbar.set_label('Firing Rate (Hz)')
+    
+    # Calculate mean firing rate across trials for each time bin
+    mean_firing_rate = np.mean(firing_rates, axis=0)
+    sem_firing_rate = stats.sem(firing_rates, axis=0)
+    
+    # Plot mean firing rate
+    ax2.plot(mean_firing_rate, bin_centers, color='black')
+    ax2.fill_betweenx(bin_centers, 
+                     mean_firing_rate - sem_firing_rate,
+                     mean_firing_rate + sem_firing_rate,
+                     color='gray', alpha=0.3)
+    
+    ax2.set_xlabel('Mean Firing Rate (Hz)')
+    ax2.set_yticks([])
+    ax2.set_title('Mean Response')
+    
+    # Add horizontal lines at stimulus onset and offset
+    ax2.axhline(y=0, color='red', linestyle='--', alpha=0.8)
+    ax2.axhline(y=stim_offset, color='blue', linestyle='--', alpha=0.6)
+    
+    plt.tight_layout()
+    return fig
+
+# %%
+# Create trial heatmap for an interesting unit
+# Choose a unit with a strong response
+responsive_units = response_df[response_df['significant']].sort_values(by='t_stat', ascending=False)
+if len(responsive_units) > 0:
+    top_unit_id = responsive_units.iloc[0]['unit_id']
+    print(f"Creating heatmap for unit {int(top_unit_id)}, the most responsive unit")
+    create_trial_heatmap(int(top_unit_id))
+else:
+    # If no significant units, use the first unit
+    print("No significantly responsive units found, using unit 0 instead")
+    create_trial_heatmap(0)
+
+# %% [markdown]
+# ## Summary and Future Directions
+#
+# In this notebook, we've explored Dandiset 000945, which contains neural spiking data from rat somatosensory cortex during transcranial focused ultrasound stimulation.
+#
+# We've shown how to:
+# 1. Load the Dandiset and explore its assets
+# 2. Load an NWB file and examine its structure
+# 3. Extract and visualize spike times for different neurons
+# 4. Create raster plots and PSTHs to analyze neuron responses to ultrasound stimulation
+# 5. Compare responses between different cell types (RSU vs FSU)
+# 6. Visualize trial-to-trial variability in neural responses
+#
+# Future analyses could include:
+# - Comparing responses across different ultrasound pulse repetition frequencies
+# - Analyzing response latency and duration
+# - Investigating population-level responses and correlations between neurons
+# - Examining how responses change over time during the experiment
+# - Comparing awake vs anesthetized responses
+#
+# This dataset provides valuable information about how focused ultrasound stimulation affects neural activity in the somatosensory cortex, which could have implications for non-invasive neuromodulation techniques.
+================================
+Total prompt tokens: 60259 + 0
+Total completion tokens: 7827 + 0
+
+=========================================
+
+write_to_file for 'notebook.py':
+Successfully wrote 19875 characters to notebook.py
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 12
+Submitting completion request...
+Processing response...
+I need to use the jupytext command to convert the notebook.py file to a Jupyter notebook format, and then execute the notebook to verify it runs without errors. This will also generate the output cells, which will make the notebook more informative when opened.
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb', 'requires_approval': 'false', 'timeout': '600'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb
+================================
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+Traceback (most recent call last):
+  File "/opt/conda/bin/jupyter-execute", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/jupyter_core/application.py", line 283, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "/opt/conda/lib/python3.11/site-packages/traitlets/config/application.py", line 1074, in launch_instance
+    app.initialize(argv)
+  File "/opt/conda/lib/python3.11/site-packages/traitlets/config/application.py", line 118, in inner
+    return method(app, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/cli.py", line 161, in initialize
+    self.run_notebook(path)
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/cli.py", line 215, in run_notebook
+    client.execute()
+  File "/opt/conda/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("000945")
+assets = list(dandiset.get_assets())
+
+print(f"Dandiset name: {dandiset.get_metadata()['name']}")
+print(f"Found {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 6[0m
+[1;32m      3[0m dandiset [38;5;241m=[39m client[38;5;241m.[39mget_dandiset([38;5;124m"[39m[38;5;124m000945[39m[38;5;124m"[39m)
+[1;32m      4[0m assets [38;5;241m=[39m [38;5;28mlist[39m(dandiset[38;5;241m.[39mget_assets())
+[0;32m----> 6[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mDandiset name: [39m[38;5;132;01m{[39;00m[43mdandiset[49m[38;5;241;43m.[39;49m[43mget_metadata[49m[43m([49m[43m)[49m[43m[[49m[38;5;124;43m'[39;49m[38;5;124;43mname[39;49m[38;5;124;43m'[39;49m[43m][49m[38;5;132;01m}[39;00m[38;5;124m"[39m)
+[1;32m      7[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mFound [39m[38;5;132;01m{[39;00m[38;5;28mlen[39m(assets)[38;5;132;01m}[39;00m[38;5;124m assets in the dataset[39m[38;5;124m"[39m)
+[1;32m      8[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;130;01m\n[39;00m[38;5;124mFirst 5 assets:[39m[38;5;124m"[39m)
+
+[0;31mTypeError[0m: 'Dandiset' object is not subscriptable
+
+Total prompt tokens: 83854 + 0
+Total completion tokens: 7977 + 0
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb' (requires approval):
+Command failed with exit code 1
+STDOUT:
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+
+STDERR:
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+Traceback (most recent call last):
+  File "/opt/conda/bin/jupyter-execute", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/jupyter_core/application.py", line 283, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "/opt/conda/lib/python3.11/site-packages/traitlets/config/application.py", line 1074, in launch_instance
+    app.initialize(argv)
+  File "/opt/conda/lib/python3.11/site-packages/traitlets/config/application.py", line 118, in inner
+    return method(app, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/cli.py", line 161, in initialize
+    self.run_notebook(path)
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/cli.py", line 215, in run_notebook
+    client.execute()
+  File "/opt/conda/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/conda/lib/python3.11/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("000945")
+assets = list(dandiset.get_assets())
+
+print(f"Dandiset name: {dandiset.get_metadata()['name']}")
+print(f"Found {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 6[0m
+[1;32m      3[0m dandiset [38;5;241m=[39m client[38;5;241m.[39mget_dandiset([38;5;124m"[39m[38;5;124m000945[39m[38;5;124m"[39m)
+[1;32m      4[0m assets [38;5;241m=[39m [38;5;28mlist[39m(dandiset[38;5;241m.[39mget_assets())
+[0;32m----> 6[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mDandiset name: [39m[38;5;132;01m{[39;00m[43mdandiset[49m[38;5;241;43m.[39;49m[43mget_metadata[49m[43m([49m[43m)[49m[43m[[49m[38;5;124;43m'[39;49m[38;5;124;43mname[39;49m[38;5;124;43m'[39;49m[43m][49m[38;5;132;01m}[39;00m[38;5;124m"[39m)
+[1;32m      7[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mFound [39m[38;5;132;01m{[39;00m[38;5;28mlen[39m(assets)[38;5;132;01m}[39;00m[38;5;124m assets in the dataset[39m[38;5;124m"[39m)
+[1;32m      8[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;130;01m\n[39;00m[38;5;124mFirst 5 assets:[39m[38;5;124m"[39m)
+
+[0;31mTypeError[0m: 'Dandiset' object is not subscriptable
+
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 14
+Submitting completion request...
+Processing response...
+The error message shows that there's a problem with the way I'm accessing the Dandiset metadata. The code is attempting to access dandiset.get_metadata()['name'], but it's failing because 'Dandiset' object is not subscriptable. 
+
+I need to check the correct way to access metadata in the latest version of the dandi library. Let me modify the notebook to fix this issue and possibly other potential issues that might arise in the later cells.
+
+Tool: replace_in_file
+Params: {'path': 'notebook.py', 'diff': '<<<<<<< SEARCH\n# Connect to DANDI archive\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("000945")\nassets = list(dandiset.get_assets())\n\nprint(f"Dandiset name: {dandiset.get_metadata()[\'name\']}")\nprint(f"Found {len(assets)} assets in the dataset")\nprint("\\nFirst 5 assets:")\nfor asset in assets[:5]:\n    print(f"- {asset.path}")\n=======\n# Connect to DANDI archive\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("000945")\nassets = list(dandiset.get_assets())\n\n# Get metadata\nmetadata = dandiset.get_metadata()\nprint(f"Dandiset name: {metadata.name}")\nprint(f"Found {len(assets)} assets in the dataset")\nprint("\\nFirst 5 assets:")\nfor asset in assets[:5]:\n    print(f"- {asset.path}")\n>>>>>>> REPLACE'}
+================================
+Proposed replacement in notebook.py:
+<<<<<<< SEARCH
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("000945")
+assets = list(dandiset.get_assets())
+
+print(f"Dandiset name: {dandiset.get_metadata()['name']}")
+print(f"Found {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+=======
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("000945")
+assets = list(dandiset.get_assets())
+
+# Get metadata
+metadata = dandiset.get_metadata()
+print(f"Dandiset name: {metadata.name}")
+print(f"Found {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+>>>>>>> REPLACE
+================================
+Total prompt tokens: 109054 + 0
+Total completion tokens: 8408 + 0
+
+=========================================
+
+replace_in_file for 'notebook.py':
+Successfully made 1 replacements in notebook.py
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 16
+Submitting completion request...
+Processing response...
+I've fixed the metadata access issue by getting the metadata object first and then accessing the name attribute directly. Let's reconvert and execute the notebook to see if there are any other issues.
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb', 'requires_approval': 'false', 'timeout': '600'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb
+================================
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb (destination file replaced [use --update to preserve cell outputs and ids])
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+Total prompt tokens: 134760 + 0
+Total completion tokens: 8529 + 0
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb' (requires approval):
+Command executed successfully
+STDOUT:
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb (destination file replaced [use --update to preserve cell outputs and ids])
+
+STDERR:
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 18
+Submitting completion request...
+Processing response...
+The command executed successfully, which means the Jupiter notebook was converted from the Jupytext file and executed without errors. Let's take a look at the notebook file to see if it contains the output cells as expected.
+
+Tool: execute_command
+Params: {'command': 'ls -la notebook.ipynb', 'requires_approval': 'false'}
+================================
+Command to be executed
+ls -la notebook.ipynb
+================================
+-rw-r--r-- 1 jovyan users 1897647 Apr 16 16:45 notebook.ipynb
+Total prompt tokens: 160764 + 0
+Total completion tokens: 8647 + 0
+
+=========================================
+
+execute_command 'ls -la notebook.ipynb' (requires approval):
+Command executed successfully
+STDOUT:
+-rw-r--r-- 1 jovyan users 1897647 Apr 16 16:45 notebook.ipynb
+
+=========================================
+
+Using model: anthropic/claude-3.7-sonnet
+Num. messages in conversation: 20
+Submitting completion request...
+Processing response...
+I have successfully:
+1. Created a Jupytext notebook (notebook.py) for exploring Dandiset 000945
+2. Fixed an issue with the metadata access in the notebook
+3. Converted the Jupytext file to a Jupyter notebook format (notebook.ipynb)
+4. Executed the notebook, generating output cells with visualizations and analysis results
+
+The notebook follows the structure outlined in the task, covering:
+- Title and disclaimer
+- Overview of the Dandiset
+- Required packages
+- Loading the Dandiset and exploring its assets
+- Loading and examining an NWB file
+- Analyzing spike times and neural responses to ultrasound stimulation
+- Comparing responses across different cell types
+- Advanced visualization of trial-to-trial variability
+- Summary and future directions
+
+Now I can use the attempt_completion tool to present the final result.
+
+Tool: attempt_completion
+Params: {'result': "I've created a Jupyter notebook for exploring Dandiset 000945, which contains neural spiking data from rat somatosensory cortex during transcranial focused ultrasound stimulation.\n\nThe notebook includes:\n\n1. A comprehensive introduction and overview of the dataset\n2. Code to load the Dandiset and explore its assets using the DANDI API\n3. Analysis of NWB file structure and metadata\n4. Visualization of spike times and neural responses to ultrasound stimulation\n5. Comparison of responses between different neuron types (Regular Spiking Units vs Fast Spiking Units)\n6. Advanced visualizations including raster plots, PSTHs, and trial-by-trial heatmaps\n7. Summary and suggestions for future analyses\n\nThe notebook was successfully converted from Jupytext format to a standard Jupyter notebook and executed, generating all the output cells, plots, and visualizations. The executed notebook (notebook.ipynb) can be opened with any Jupyter notebook viewer or editor.\n\nKey features of the notebook:\n- Connects to the DANDI archive to access and load data\n- Streams NWB files remotely without requiring download\n- Extracts spike times and trial information\n- Creates informative visualizations of neural activity\n- Performs statistical analysis to identify responsive neurons\n- Compares response properties across different cell types\n\nThe notebook provides researchers with a solid foundation for exploring this dataset and can be extended for more advanced analyses.", 'command': 'jupyter notebook notebook.ipynb'}
+I've created a Jupyter notebook for exploring Dandiset 000945, which contains neural spiking data from rat somatosensory cortex during transcranial focused ultrasound stimulation.
+
+The notebook includes:
+
+1. A comprehensive introduction and overview of the dataset
+2. Code to load the Dandiset and explore its assets using the DANDI API
+3. Analysis of NWB file structure and metadata
+4. Visualization of spike times and neural responses to ultrasound stimulation
+5. Comparison of responses between different neuron types (Regular Spiking Units vs Fast Spiking Units)
+6. Advanced visualizations including raster plots, PSTHs, and trial-by-trial heatmaps
+7. Summary and suggestions for future analyses
+
+The notebook was successfully converted from Jupytext format to a standard Jupyter notebook and executed, generating all the output cells, plots, and visualizations. The executed notebook (notebook.ipynb) can be opened with any Jupyter notebook viewer or editor.
+
+Key features of the notebook:
+- Connects to the DANDI archive to access and load data
+- Streams NWB files remotely without requiring download
+- Extracts spike times and trial information
+- Creates informative visualizations of neural activity
+- Performs statistical analysis to identify responsive neurons
+- Compares response properties across different cell types
+
+The notebook provides researchers with a solid foundation for exploring this dataset and can be extended for more advanced analyses.
+Total prompt tokens: 186998 + 0
+Total completion tokens: 9244 + 0
+

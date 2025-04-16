@@ -1,0 +1,17 @@
+{
+  "dandiset_id": "000945",
+  "model": "anthropic/claude-3.7-sonnet",
+  "prompt": "prompt-b-5.txt",
+  "total_prompt_tokens": 1125707,
+  "total_completion_tokens": 20014,
+  "total_vision_prompt_tokens": 12161,
+  "total_vision_completion_tokens": 1785,
+  "elapsed_time_seconds": 603.5166809558868,
+  "timestamp": "2025-04-16 16:55:49",
+  "system_info": {
+    "platform": "Linux-5.10.234-225.921.amzn2.x86_64-x86_64-with-glibc2.39",
+    "hostname": "jupyter-magland",
+    "processor": "x86_64",
+    "python_version": "3.11.10"
+  }
+}
